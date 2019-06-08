@@ -1,0 +1,36 @@
+.button {
+	border-radius: 3px;
+	color: $background-white;
+	text-align: center;
+	font-family: $font;
+	font-weight: 300;
+	cursor: pointer;
+	border: none;
+}
+
+.okbutton {
+	background-color: $ok-button-color;
+	&:hover {
+		background-color: $ok-button-hover-color;
+		transition-duration: 0.4s;
+	}
+}
+
+.nobutton {
+	background-color: $no-button-color;
+	&:hover {
+		background-color: $no-button-hover-color;
+		transition-duration: 0.4s;
+	}
+}
+
+.disabled{
+	background-color: $disabled-button;
+	cursor: not-allowed;
+}
+
+.refresh_button {
+	padding: 12px;
+	font-size: 15px;
+	margin: 13px;
+}

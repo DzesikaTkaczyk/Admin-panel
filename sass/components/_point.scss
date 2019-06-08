@@ -1,0 +1,20 @@
+.point {
+	position: relative;
+	border-radius: 50%;
+}
+
+.active-point {
+	background-color: $active-color;
+}
+
+.blue-point {
+	background-color: $links-color;
+}
+
+.orange-poin t{
+	background-color: $ok-button-color;
+}
+
+.green-point {
+	background-color: $positive-notification-hover;
+}

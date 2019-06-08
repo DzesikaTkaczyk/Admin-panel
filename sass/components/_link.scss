@@ -1,0 +1,19 @@
+.link {
+	text-decoration: none;
+	font-family: "Roboto", sans-serif;
+}
+
+.side_menu_link {
+	color: $no-button-color;
+	font-weight: 300;
+	font-size: 14px;
+	margin: 0;
+	line-height: 40px;
+	display: inline-flex;
+	text-align: left;
+	margin-left: 20px;
+}
+
+.list_link {
+	color: $links-color;
+}
