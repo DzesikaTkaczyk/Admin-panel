@@ -941,5 +941,25 @@ body {
   margin-right: 20px;
 }
 
+.general_stat .side-center {
+  width: 687px;
+}
+
+.general_stat .calendar {
+  text-align: center;
+}
+
+.general_stat h2 {
+  color: #979797;
+  display: inline-block;
+}
+
+.general_stat p {
+  color: #333333;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+}
+
 /* Pages / Views */
 /*# sourceMappingURL=style.prefixed.css.map */

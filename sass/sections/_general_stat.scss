@@ -1,0 +1,23 @@
+.general_stat {
+	
+	.side-center {
+		width: 687px
+	}
+
+	.calendar {
+		text-align: center;
+	}
+
+	h2 {
+		color: $no-button-color;
+		display: inline-block;
+	}
+
+	p {
+		color: $menu-background-color;
+		display: inline-block;
+		font-size: 16px;
+		font-weight: 300;
+
+	}
+}
