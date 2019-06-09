@@ -73,22 +73,20 @@
 		border: 0 1px 1px 1px solid $no-button-hover-color;
 	}
 
-	.charge{
+	.underlist {
 		font-size: 12px;
 		font-family: $font;
-		color: $no-button-color;
 		font-weight: 400;
 		display: inline-block;
+	}
+	.charge {
+		color: $no-button-color;
 		float: left;
 		margin-left: 20px;
 	}
 
-	.howmuch{
-		font-size: 12px;
-		font-family: $font;
+	.howmuch {
 		color: $menu-background-color;
-		font-weight: 400;
-		display: inline-block;
 		float: right;
 		margin-right: 20px;
 	}

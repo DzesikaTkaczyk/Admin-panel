@@ -707,6 +707,9 @@ body {
   background-color: #333333;
   height: 100%;
   width: 188px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .side_menu .logo {
@@ -867,22 +870,21 @@ body {
   border: 0 1px 1px 1px solid #bababa;
 }
 
-.top_menu .charge {
+.top_menu .underlist {
   font-size: 12px;
   font-family: "Roboto", sans-serif;
-  color: #979797;
   font-weight: 400;
   display: inline-block;
+}
+
+.top_menu .charge {
+  color: #979797;
   float: left;
   margin-left: 20px;
 }
 
 .top_menu .howmuch {
-  font-size: 12px;
-  font-family: "Roboto", sans-serif;
   color: #333333;
-  font-weight: 400;
-  display: inline-block;
   float: right;
   margin-right: 20px;
 }
