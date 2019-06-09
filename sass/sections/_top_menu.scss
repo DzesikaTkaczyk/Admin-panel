@@ -1,0 +1,95 @@
+.top_menu {
+	background-color: $background-white;
+	width: 100%;
+	height: 60px;
+	border-bottom: 1px solid $no-button-hover-color;
+	
+	.top_menu_content {
+		float: right;
+	}
+
+	.top {
+		line-height: 60px;
+		margin: 0 10px;
+		display: inline-block;
+	}
+	
+	a {
+		text-decoration: none;
+	}
+
+	.list_horizontal {
+		display: inline-block;
+		height: 60px;
+		padding: 0 10px;
+		border-left: 1px solid $no-button-hover-color;
+		&:hover {
+
+		}
+	}
+
+	.amount {
+		font-size: 20px;
+		font-family: $font;
+		font-weight: 400;
+		text-decoration: none;
+		color: $no-button-color;
+	}
+
+	.demo-icon {
+		color: $no-button-color;
+	}
+	
+	.icon-wallet {
+		font-size: 17px;
+	}
+
+	.icon-arrow-down {
+		font-size: 8px;
+	}
+
+	.icon-notification {
+		font-size: 18px;
+	}
+
+	.icon-profile {
+		font-size: 18px;
+	}
+	
+	.orange-point {
+		height: 8px;
+		width: 8px;
+		position: absolute;
+		top: -4px;
+		right: 10px;
+	}
+
+	.bell_point {
+		position: relative;
+	}
+
+	.dropdown {
+		background-color: $side-background-color;
+		border: 0 1px 1px 1px solid $no-button-hover-color;
+	}
+
+	.charge{
+		font-size: 12px;
+		font-family: $font;
+		color: $no-button-color;
+		font-weight: 400;
+		display: inline-block;
+		float: left;
+		margin-left: 20px;
+	}
+
+	.howmuch{
+		font-size: 12px;
+		font-family: $font;
+		color: $menu-background-color;
+		font-weight: 400;
+		display: inline-block;
+		float: right;
+		margin-right: 20px;
+	}
+}

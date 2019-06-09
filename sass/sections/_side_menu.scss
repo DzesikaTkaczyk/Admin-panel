@@ -2,87 +2,86 @@
 	background-color: $menu-background-color;
 	height: 100%;
 	width: 188px;
-}
+	.logo {
+		margin-left: 20px;
+		line-height: 55px; 
+		margin-top: 5px;
+		display: inline-block;
 
-.logo {
-	margin-left: 20px;
-	line-height: 55px; 
-	margin-top: 5px;
-	display: inline-block;
-
-}
-.burger {
-	float: right;
-	margin-right: 16px;
-	line-height: 60px; 
-	color: $no-button-color;
-	&:hover {
-		color: $background-white;
 	}
-}
+	.burger {
+		float: right;
+		margin-right: 16px;
+		line-height: 60px; 
+		color: $no-button-color;
+		&:hover {
+			color: $background-white;
+		}
+	}
 
-h3 {
-	color: $no-button-color;
-	margin: 0 0 0 20px;
-	line-height: 60px;
-}
+	h3 {
+		color: $no-button-color;
+		margin: 0 0 0 20px;
+		line-height: 60px;
+	}
 
-.av {
-	height: 43px;
-	width: 43px;
-	margin-left: 20px;
-	display: inline-block;
-}
+	.av {
+		height: 43px;
+		width: 43px;
+		margin-left: 20px;
+		display: inline-block;
+	}
 
-.avatar{
-	width: 63px;
-	height: 43px;
-	position: relative;
-}
+	.avatar{
+		width: 63px;
+		height: 43px;
+		position: relative;
+	}
 
-.active-point{
-	width: 12px;
-	height: 12px;
-	position: absolute;
-	top: 0;
-	right: 0;
-}
+	.active-point{
+		width: 12px;
+		height: 12px;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
 
-.manage_name {
-	color: $links-color;
-	font-family: "Roboto", sans-serif;
-	font-weight: 300;
-	font-size: 14px;
-	margin: 0 0 0 12px;
-	text-transform: none;
-	line-height: 43px;
-	display: inline-block;
-	white-space: nowrap;
-}
+	.manage_name {
+		color: $links-color;
+		font-family: $font;
+		font-weight: 300;
+		font-size: 14px;
+		margin: 0 0 0 12px;
+		text-transform: none;
+		line-height: 43px;
+		display: inline-block;
+		white-space: nowrap;
+	}
 
-.manager{
-	display:flex;
-    align-items:center;
-}
+	.manager{
+		display:flex;
+	    align-items:center;
+	}
 
-.list{
-	margin-bottom: 25px;
-	position: relative;
-}
+	.list{
+		margin-bottom: 25px;
+		position: relative;
+	}
 
-.subpage{
-	position: absolute;
-	left: 47px;
-	white-space: nowrap;
-}
+	.subpage{
+		position: absolute;
+		left: 47px;
+		white-space: nowrap;
+	}
 
-.icon-links {
-	font-size: 10px;
-}
+	.icon-links {
+		font-size: 10px;
+	}
 
-li:hover {
-	background-color: $no-button-color;
-	a {
-		color: $background-white;
+	li:hover {
+		background-color: $no-button-color;
+		a {
+			color: $background-white;
+		}
 	}
 }
