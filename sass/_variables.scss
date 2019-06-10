@@ -23,12 +23,15 @@ $font: "Roboto", sans-serif;
 h1 {
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 500;
 	text-transform: uppercase;
-	margin: 0px 15px 20px;
+	display: block;
+	color: $no-button-hover-color;
+	padding: 18px;
+	margin: 0;
 }
 
-h2{
+h2 {
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 	font-weight: 700;
@@ -41,6 +44,6 @@ h3 {
 	text-transform: uppercase;
 }
 
-body{
+body {
 	background-color: $side-background-color
 }
