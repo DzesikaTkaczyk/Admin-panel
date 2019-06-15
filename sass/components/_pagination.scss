@@ -1,0 +1,26 @@
+.pagination {
+	margin: 18px 0 38px 0;
+	display: inline-block;
+	a {
+		text-decoration: none;
+		font-family: $font;
+		padding: 14px 20px;
+	}
+
+	.demo-icon {
+		color: $grey;
+	}
+
+	.page_nr {
+		color: $links-color;
+		font-weight: 300;
+		font-size: 21px;
+	}
+
+	.active {
+		background-color: $side-background-color;
+		border-radius: 3px;
+		color: $grey;
+		font-weight: 700; 
+	}
+}

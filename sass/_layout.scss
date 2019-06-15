@@ -23,6 +23,11 @@
   clear: both;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @mixin grid($prefix) {
   @for $i from 1 through 12 {
     .col-#{$prefix}-#{$i} {

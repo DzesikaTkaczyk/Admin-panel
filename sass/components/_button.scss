@@ -1,6 +1,6 @@
 .button {
 	border-radius: 3px;
-	color: $background-white;
+	color: $white;
 	text-align: center;
 	font-family: $font;
 	font-weight: 300;
@@ -9,30 +9,30 @@
 }
 
 .okbutton {
-	background-color: $ok-button-color;
+	background-color: $success-color;
 	&:hover {
-		background-color: $ok-button-hover-color;
+		background-color: $success-hover-color;
 		transition-duration: 0.4s;
 	}
 }
 
 .nobutton {
-	background-color: $no-button-color;
+	background-color: $dark-grey;
 	&:hover {
-		background-color: $no-button-hover-color;
+		background-color: $grey;
 		transition-duration: 0.4s;
 	}
 }
 
 .disabled{
-	background-color: $disabled-button;
+	background-color: $light-grey;
 	cursor: not-allowed;
 }
 
 .refresh_button {
 	padding: 12px;
 	font-size: 15px;
-	margin: 13px;
+	margin-left: 13px;
 }
 
 .send_button {

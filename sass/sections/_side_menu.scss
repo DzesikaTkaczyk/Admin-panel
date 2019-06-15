@@ -1,7 +1,9 @@
 .side_menu {
 	background-color: $menu-background-color;
 	height: 100%;
-	width: 188px;
+	//width: 188px;
+	display: flex;
+	flex-wrap: wrap;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -16,15 +18,16 @@
 	.burger {
 		float: right;
 		margin-right: 16px;
+		margin-left: 20px;
 		line-height: 60px; 
-		color: $no-button-color;
+		color: $dark-grey;
 		&:hover {
-			color: $background-white;
+			color: $white;
 		}
 	}
 
 	h3 {
-		color: $no-button-color;
+		color: $dark-grey;
 		margin: 0 0 0 20px;
 		line-height: 60px;
 	}
@@ -82,10 +85,31 @@
 		font-size: 10px;
 	}
 
+	.hidden {
+		display: none;
+	}
+	
 	li:hover {
-		background-color: $no-button-color;
+		background-color: $dark-grey;
 		a {
-			color: $background-white;
+			color: $white;
 		}
+		
+		.hidden {
+			display: inline-block;
+
+		}
+	}
+
+	.active {
+		border-left: 4px solid $success-color;
+		background-color: $dark-grey;
+		a {
+			color: $white;
+		}
+	}
+
+	.hidden_mobile {
+
 	}
 }

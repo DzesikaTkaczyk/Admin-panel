@@ -7,17 +7,20 @@
 @import "components/av";
 @import "components/box";
 @import "components/button";
-
+@import "components/calendar";
+@import "components/input";
 @import "components/line";
 @import "components/link";
 @import "components/list";
+@import "components/pagination";
 @import "components/point";
+@import "components/typography";
 
 /* Sections */
-@import "sections/side_menu";
-@import "sections/top_menu";
 @import "sections/general_stat";
-
 @import "sections/popup_chat";
+@import "sections/side_menu";
+@import "sections/table";
+@import "sections/top_menu";
 
 /* Pages / Views */

@@ -1,0 +1,27 @@
+.calendar {
+	text-align: center;
+	margin: 34px 0;
+	display: flex;
+	align-items: center;
+	
+	.date {
+		height: 40px;
+	}
+	
+	.date1 {
+		border-right: 1px solid $light-grey; 
+	}
+
+	.date2 {
+  		background:#fff url(../images/calendar.png)  97% 50% no-repeat;
+		margin: 0 4px 0 10px;
+	}
+
+	[type="date"]::-webkit-inner-spin-button {
+		display: none;
+	}
+
+	[type="date"]::-webkit-calendar-picker-indicator {
+		opacity: 0;
+	}
+}

@@ -1,6 +1,23 @@
 .box {
 	margin: 18px;
-	background-color: $background-white;
-	box-shadow: 10px $disabled-button;
+	background-color: $white;
+	box-shadow: 0 0 10px 5px $light-grey;
 	border-radius: 3px;
+}
+
+.small_box {
+	display: inline-block;
+	border-width: 1px;
+	border-radius: 3px;
+	border-style: solid;
+	border-color: $grey;
+	&:hover {
+		border-color: $light-grey;
+		transition-duration: 0.4s;
+	}
+}
+
+.date {
+	padding: 6px 6px 6px 16px ;
+
 }

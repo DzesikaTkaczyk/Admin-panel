@@ -1,10 +1,10 @@
 .link {
 	text-decoration: none;
-	font-family: "Roboto", sans-serif;
+	font-family: $font;
 }
 
 .side_menu_link {
-	color: $no-button-color;
+	color: $dark-grey;
 	font-weight: 300;
 	font-size: 14px;
 	margin: 0;
