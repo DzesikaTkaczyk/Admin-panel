@@ -1,0 +1,23 @@
+.big_table{
+	margin-left: 16px;
+	margin-right: 16px;
+	th {
+		padding: 0 14px;
+	}
+	td {
+		padding: 0 14px;
+		font-family: $font;
+		font-size: 17px;
+		font-weight: 300;
+	}
+	.scroll-wrapper {
+	  display: block;
+	  width: 100%;
+	  overflow-x: auto;
+	}
+
+	.scroll-wrapper table {
+	  width: 100%;
+	  max-width: 100%;
+	}
+}

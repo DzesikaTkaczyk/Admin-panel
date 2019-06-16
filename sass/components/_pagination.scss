@@ -15,6 +15,10 @@
 		color: $links-color;
 		font-weight: 300;
 		font-size: 21px;
+		&:hover {
+			background-color: $side-background-color;
+			border-radius: 3px;
+		}
 	}
 
 	.active {

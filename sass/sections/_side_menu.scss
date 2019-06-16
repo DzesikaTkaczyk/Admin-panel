@@ -1,12 +1,42 @@
 .side_menu {
 	background-color: $menu-background-color;
 	height: 100%;
-	//width: 188px;
-	display: flex;
-	flex-wrap: wrap;
-	position: absolute;
+	width: 54px;
 	top: 0;
 	left: 0;
+	&:hover {
+		width: 188px;
+		.hidden {
+			display: inline-block;
+		}
+		
+		.av {
+			height: 43px;
+			width: 43px;
+			margin-left: 20px;
+
+		}
+		
+		.active-point{
+			width: 12px;
+			height: 12px;
+		}
+		
+		.avatar{
+			width: 63px;
+			height: 43px;
+			margin-top: 0;
+		}
+
+		.active {
+			width: 188px;
+			border-left: 4px solid $success-color;
+			background-color: $dark-grey;
+			a {
+				color: $white;
+			}
+		}
+	}
 
 	.logo {
 		margin-left: 20px;
@@ -15,15 +45,14 @@
 		display: inline-block;
 
 	}
+
 	.burger {
 		float: right;
 		margin-right: 16px;
 		margin-left: 20px;
 		line-height: 60px; 
 		color: $dark-grey;
-		&:hover {
-			color: $white;
-		}
+		display: inline-block;
 	}
 
 	h3 {
@@ -33,21 +62,23 @@
 	}
 
 	.av {
-		height: 43px;
-		width: 43px;
-		margin-left: 20px;
+		height: 30px;
+		width: 30px;
+		margin-left: 12px;
 		display: inline-block;
 	}
 
 	.avatar{
-		width: 63px;
-		height: 43px;
+		width: 43px;
+		height: 33px;
 		position: relative;
+		margin-top: 23px;
+		display: inline-block;
 	}
 
 	.active-point{
-		width: 12px;
-		height: 12px;
+		width: 8px;
+		height: 8px;
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -62,12 +93,12 @@
 		text-transform: none;
 		line-height: 43px;
 		display: inline-block;
-		white-space: nowrap;
 	}
 
-	.manager{
-		display:flex;
-	    align-items:center;
+	.manager {
+		display: flex;
+	    align-items: center;
+	    white-space: nowrap;
 	}
 
 	.list{
@@ -89,15 +120,25 @@
 		display: none;
 	}
 	
-	li:hover {
-		background-color: $dark-grey;
-		a {
-			color: $white;
-		}
-		
-		.hidden {
-			display: inline-block;
+	a {
+		margin-left: 16px;
+	}
 
+	li {
+		display: block;
+		border-left: 4px solid $menu-background-color;
+		background-color: $menu-background-color;
+		width: 54px;
+		&:hover{
+			width: 188px;
+			background-color: $dark-grey;
+			border-left: 4px solid $dark-grey;
+			a {
+				color: $white;
+			}
+			.hidden {
+							display: block;
+						}		
 		}
 	}
 
