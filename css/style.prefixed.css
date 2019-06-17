@@ -352,6 +352,7 @@ body {
 .wrap {
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .content_wrap {
@@ -371,13 +372,6 @@ body {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.row::before,
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .row {
@@ -729,6 +723,8 @@ body {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .calendar .date {
@@ -935,7 +931,6 @@ p {
 
 .side_menu {
   background-color: #333333;
-  height: 100%;
   width: 54px;
   top: 0;
   left: 0;
@@ -976,6 +971,22 @@ p {
   color: #ffffff;
 }
 
+.side_menu .side_menu_sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.side_menu .side_menu_top {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+}
+
 .side_menu .logo {
   margin-left: 20px;
   line-height: 55px;
@@ -984,7 +995,6 @@ p {
 }
 
 .side_menu .burger {
-  float: right;
   margin-right: 16px;
   margin-left: 20px;
   line-height: 60px;
@@ -1192,10 +1202,11 @@ p {
 }
 
 .top_menu .top_menu_content {
-  float: right;
   white-space: nowrap;
-  -ms-flex-align: start;
-      align-items: flex-start;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
 }
 
 .top_menu .top {
@@ -1208,8 +1219,15 @@ p {
   text-decoration: none;
 }
 
+.top_menu .icon_profile {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
 .top_menu .list_horizontal {
-  display: inline-block;
+  display: block;
   height: 60px;
   padding: 0 10px;
   border-left: 1px solid #e3e3e3;
@@ -1262,6 +1280,7 @@ p {
   width: auto;
   -ms-flex-pack: justify;
       justify-content: space-between;
+  position: absolute;
 }
 
 .top_menu .underlist {

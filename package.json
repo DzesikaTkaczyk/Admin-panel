@@ -30,7 +30,7 @@
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "watch": "npm-run-all build -p watch:*",
-    "watch:onchangesass": "onchange sass/*.scss -- npm run watch:sassprefixer",
+    "watch:onchangesass": "onchange sass/**/*.scss -- npm run watch:sassprefixer",
     "watch:sassprefixer": "npm-run-all -s sassprefixer:*",
     "sassprefixer:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "sassprefixer:autoprefixer": "autoprefixer-cli -o css/style.prefixed.css css/style.css",

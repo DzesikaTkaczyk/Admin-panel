@@ -5,9 +5,9 @@
 	border-bottom: 1px solid $light-grey;
 
 	.top_menu_content {
-		float: right;
 		white-space: nowrap;
-		align-items: flex-start;
+		display: flex;
+		justify-content: flex-end;	
 	}
 
 	.top {
@@ -20,8 +20,13 @@
 		text-decoration: none;
 	}
 
+	.icon_profile {
+		display: flex;
+		align-items: center;
+	}
+
 	.list_horizontal {
-		display: inline-block;
+		display: block;
 		height: 60px;
 		padding: 0 10px;
 		border-left: 1px solid $light-grey;
@@ -77,6 +82,7 @@
 		width: auto;
 		justify-content: space-between;
 		//flex-direction: column;
+		position: absolute;
 	}
 
 	.underlist {

@@ -4,6 +4,7 @@
 
 .wrap {
   display: flex;
+  position: relative;
 }
 
 .content_wrap {
@@ -22,13 +23,6 @@
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.row::before,
-.row::after {
-  content:"";
-  display: table;
-  clear: both;
 }
 
 .row {
