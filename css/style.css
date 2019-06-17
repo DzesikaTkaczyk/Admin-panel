@@ -1130,6 +1130,8 @@ p {
 
 .top_menu .top_menu_content {
   float: right;
+  white-space: nowrap;
+  align-items: flex-start;
 }
 
 .top_menu .top {

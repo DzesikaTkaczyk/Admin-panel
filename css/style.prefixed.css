@@ -1191,6 +1191,9 @@ p {
 
 .top_menu .top_menu_content {
   float: right;
+  white-space: nowrap;
+  -ms-flex-align: start;
+      align-items: flex-start;
 }
 
 .top_menu .top {
