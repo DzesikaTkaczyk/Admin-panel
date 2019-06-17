@@ -1,6 +1,7 @@
 .pagination {
 	margin: 18px 0 38px 0;
-	display: inline-block;
+	display: block;
+	white-space: nowrap;
 	a {
 		text-decoration: none;
 		font-family: $font;

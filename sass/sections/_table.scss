@@ -70,6 +70,7 @@
 			font-size: 13pt;
 			font-family: $font;
 			font-weight: 700;
+			white-space: nowrap;
 			&:hover {
 				color: $menu-background-color;
 				background-color: $side-background-color;

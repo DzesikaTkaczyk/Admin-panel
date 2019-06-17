@@ -8,75 +8,109 @@
         <link rel="stylesheet" type="text/css" href="../css/style.css">
     </head>
     <body>
-    	<div class="table">
-            <div class="box">
-                <h1>Links</h1>
-                <div class="line"></div>
-                <div class="content">
-                    <button class="button okbutton add_button">+ add new</button>
-                    <table>
-                        <tr>
-                            <td><h2>Home page</h2></td>
-                            <td><a href="http://www.homepage.com" class="link list_link">http://www.homepage.com</a></td>
-                            <td><i class="demo-icon icon-links"></i></td>
-                            <td><i class="demo-icon icon-trash"></i></td>
-                        </tr>
-                        <tr>
-                            <td><h2>Currently offer</h2></td>
-                            <td><a href="http://www.currently.com" class="link list_link">http://www.currently.com</a></td>
-                            <td><i class="demo-icon icon-links"></i></td>
-                            <td><i class="demo-icon icon-trash"></i></td>
-                        </tr>
-                        <tr>
-                            <td><h2>Blurpix</h2></td>
-                            <td><a href="http://www.blurpix.com" class="link list_link">http://www.blurpix.com</a></td>
-                            <td><i class="demo-icon icon-links"></i></td>
-                            <td><i class="demo-icon icon-trash"></i></td>
-                        </tr>
-                        <tr>
-                            <td><h2>Your Site</h2></td>
-                            <td><a href="http://www.yoursite.com" class="link list_link">http://www.yoursite.com</a></td>
-                            <td><i class="demo-icon icon-links"></i></td>
-                            <td><i class="demo-icon icon-trash"></i></td>
-                        </tr>
-                        <tr>
-                            <td><h2>Google</h2></td>
-                            <td><a href="http://www.google.com" class="link list_link">http://www.google.com</a></td>
-                            <td><i class="demo-icon icon-links"></i></td>
-                            <td><i class="demo-icon icon-trash"></i></td>
-                        </tr>
-                        <tr>
-                            <td><h2>Facebook</h2></td>
-                            <td><a href="http://www.facebook.com" class="link list_link">http://www.facebook.com</a></td>
-                            <td><i class="demo-icon icon-links"></i></td>
-                            <td><i class="demo-icon icon-trash"></i></td>
-                        </tr>
-                        <tr>
-                            <td><h2>Dashboard</h2></td>
-                            <td><a href="http://www.dashboard.com" class="link list_link">http://www.dashboard.com</a></td>
-                            <td><i class="demo-icon icon-links"></i></td>
-                            <td><i class="demo-icon icon-trash"></i></td>
-                        </tr>
-                        <tr>
-                            <td><h2>Blurax</h2></td>
-                            <td><a href="http://www.blurax.com" class="link list_link">http://www.blurax.com</a></td>
-                            <td><i class="demo-icon icon-links"></i></td>
-                            <td><i class="demo-icon icon-trash"></i></td>
-                        </tr>
-                        <tr>
-                            <td><h2>Piece of Wine</h2></td>
-                            <td><a href="http://www.pieceofwine.com" class="link list_link">http://www.pieceofwine.com</a></td>
-                            <td><i class="demo-icon icon-links"></i></td>
-                            <td><i class="demo-icon icon-trash"></i></td>
-                        </tr>
-                        <tr>
-                            <td><h2>Twitter</h2></td>
-                            <td><a href="http://www.twitter.com" class="link list_link">http://www.twitter.com</a></td>
-                            <td><i class="demo-icon icon-links"></i></td>
-                            <td><i class="demo-icon icon-trash"></i></td>
-                        </tr>
-                    </table>
-                    <button class="button okbutton add_button">+ add new</button>
+        <div class="wrap">
+            <div class="side_menu">
+                <div class="row">
+                    <div class="logo hidden hidden_mobile"><img src="../images/logo.png" alt="logo"></div>
+                    <div class="burger"><img src="../images/burger.png" alt="burger"></div>
+                </div>
+                <div class="row">
+                    <ul class="list hidden_mobile">
+                        <li class="active"><a href="index.html" class="link side_menu_link"><i class="demo-icon icon-general"></i><div class="subpage hidden">General</div></a></li>
+                        <li><a href="details.html" class="link side_menu_link"><i class="demo-icon icon-details"></i><div class="subpage hidden">Details</div></a></li>
+                        <li><a href="links.html" class="link side_menu_link"><i class="demo-icon icon-links"></i><div class="subpage hidden">Links</div></a></li>
+                        <li><a href="banners.html" class="link side_menu_link"><i class="demo-icon icon-banners"></i><div class="subpage hidden">Banners</div></a></li>
+                        <li><a href="#" class="link side_menu_link"><i class="demo-icon icon-personaldata"></i><div class="subpage hidden">Personal data</div></a></li>
+                        <li><a href="#" class="link side_menu_link"><i class="demo-icon icon-payout"></i><div class="subpage hidden">Payout</div></a></li>
+                        <li><a href="#" class="link side_menu_link"><i class="demo-icon icon-postback"></i><div class="subpage hidden">Postback</div></a></li>
+                    </ul>
+                </div>
+                <div class="row"><div class="line hidden_mobile"></div></div>
+                <div class="row"><h3 class="hidden hidden_mobile">your manager</h3></div>
+                <div class="row">
+                    <div class="manager hidden_mobile">
+                        <div class="avatar">
+                            <img class="av" src="../images/av.png" alt="avatar">
+                            <div class="point active-point"></div>
+                        </div>
+                        <p class="manage_name hidden">Mikhael E.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content_wrap">
+
+
+                <div class="table">
+                    <div class="box">
+                        <h1>Links</h1>
+                        <div class="line"></div>
+                        <div class="content">
+                            <button class="button okbutton add_button">+ add new</button>
+                            <table>
+                                <tr>
+                                    <td><h2>Home page</h2></td>
+                                    <td><a href="http://www.homepage.com" class="link list_link">http://www.homepage.com</a></td>
+                                    <td><i class="demo-icon icon-links"></i></td>
+                                    <td><i class="demo-icon icon-trash"></i></td>
+                                </tr>
+                                <tr>
+                                    <td><h2>Currently offer</h2></td>
+                                    <td><a href="http://www.currently.com" class="link list_link">http://www.currently.com</a></td>
+                                    <td><i class="demo-icon icon-links"></i></td>
+                                    <td><i class="demo-icon icon-trash"></i></td>
+                                </tr>
+                                <tr>
+                                    <td><h2>Blurpix</h2></td>
+                                    <td><a href="http://www.blurpix.com" class="link list_link">http://www.blurpix.com</a></td>
+                                    <td><i class="demo-icon icon-links"></i></td>
+                                    <td><i class="demo-icon icon-trash"></i></td>
+                                </tr>
+                                <tr>
+                                    <td><h2>Your Site</h2></td>
+                                    <td><a href="http://www.yoursite.com" class="link list_link">http://www.yoursite.com</a></td>
+                                    <td><i class="demo-icon icon-links"></i></td>
+                                    <td><i class="demo-icon icon-trash"></i></td>
+                                </tr>
+                                <tr>
+                                    <td><h2>Google</h2></td>
+                                    <td><a href="http://www.google.com" class="link list_link">http://www.google.com</a></td>
+                                    <td><i class="demo-icon icon-links"></i></td>
+                                    <td><i class="demo-icon icon-trash"></i></td>
+                                </tr>
+                                <tr>
+                                    <td><h2>Facebook</h2></td>
+                                    <td><a href="http://www.facebook.com" class="link list_link">http://www.facebook.com</a></td>
+                                    <td><i class="demo-icon icon-links"></i></td>
+                                    <td><i class="demo-icon icon-trash"></i></td>
+                                </tr>
+                                <tr>
+                                    <td><h2>Dashboard</h2></td>
+                                    <td><a href="http://www.dashboard.com" class="link list_link">http://www.dashboard.com</a></td>
+                                    <td><i class="demo-icon icon-links"></i></td>
+                                    <td><i class="demo-icon icon-trash"></i></td>
+                                </tr>
+                                <tr>
+                                    <td><h2>Blurax</h2></td>
+                                    <td><a href="http://www.blurax.com" class="link list_link">http://www.blurax.com</a></td>
+                                    <td><i class="demo-icon icon-links"></i></td>
+                                    <td><i class="demo-icon icon-trash"></i></td>
+                                </tr>
+                                <tr>
+                                    <td><h2>Piece of Wine</h2></td>
+                                    <td><a href="http://www.pieceofwine.com" class="link list_link">http://www.pieceofwine.com</a></td>
+                                    <td><i class="demo-icon icon-links"></i></td>
+                                    <td><i class="demo-icon icon-trash"></i></td>
+                                </tr>
+                                <tr>
+                                    <td><h2>Twitter</h2></td>
+                                    <td><a href="http://www.twitter.com" class="link list_link">http://www.twitter.com</a></td>
+                                    <td><i class="demo-icon icon-links"></i></td>
+                                    <td><i class="demo-icon icon-trash"></i></td>
+                                </tr>
+                            </table>
+                            <button class="button okbutton add_button">+ add new</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
