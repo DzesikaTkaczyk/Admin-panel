@@ -1,20 +1,29 @@
 .general_stat {
 	width: 100%;
 	
-	.side-center {
-		width: 687px
-	}
-	
 	h2 {
 		color: $dark-grey;
 		display: inline-block;
+		margin: 0;
 	}
 
 	p {
 		color: $menu-background-color;
 		display: inline-block;
-		font-size: 16px;
+		font-size: 17px;
 		font-weight: 300;
+		margin: 0;
+	}
 
+	.stat {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+		width: 100%;
+		border-bottom: 1px solid $light-grey;
+		padding: 22px 0 8px 0;
+	}
+	.all-stat {
+		margin: 20px 0 74px 0;
 	}
 }

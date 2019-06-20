@@ -6,6 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../font/css/soloproject.css">
         <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     </head>
     <body>
         <div class="general">
@@ -14,7 +15,7 @@
                     <div class="side_menu_sticky">
                         <div class="row">
                             <div class="side_menu_top">
-                                <div class="logo hidden hidden_mobile"><img src="../images/logo.png" alt="logo"></div>
+                                <div class="logo hidden"><img src="../images/logo.png" alt="logo"></div>
                                 <div class="burger"><img src="../images/burger.png" alt="burger"></div>
                             </div>
                         </div>
@@ -43,7 +44,7 @@
                     </div>
             	</div>
                 <div class="content_wrap">
-                	<div class="row">
+                	<!--<div class="row">
                     	<div class="top_menu">
                             <ul class="top_menu_content list">
                                 <li class="list_horizontal">
@@ -77,7 +78,7 @@
                                 <li class="list_horizontal"><a href="#"><i class="demo-icon icon-quit top"></i></a></li>
                     		</ul>
                         </div>
-                    </div>
+                    </div>-->
             		<div class="general_stat">
             			<div class="box">
             				<h1>General statistic</h1>
@@ -94,15 +95,27 @@
                                 </div>
                             </div>
             				<div class="line"></div>
-            				<div class="">
-            					<div><h2>Visit Signups</h2><p>124</p></div>
-                                <div><h2>Net deposit</h2><p>564</p></div>
-                                <div><h2>FTD</h2><p>445</p></div>
-                                <div><h2>Turn over</h2><p>432</p></div>
-            				</div>
-                            <div class="">
-                                <div class="row"><h2>Earnings chart</h2></div>
-                                <div class="row"><img src="../images/tabs.png" alt="tabs"></div>
+                            <div class="col-sm-12 col-offset-md-1 col-md-10 col-offset-lg-2 col-lg-8 col-offset-xl-2 col-xl-8">
+                				<div class="all-stat">
+                                    <div class="row">
+                    					<div class="col-offset-sm-1 col-sm-10 col-md-5 col-lg-5 col-xl-5"><div class="stat"><h2>Visit Signups</h2><p>124</p></div></div>
+                                        <div class="col-offset-sm-1 col-sm-10 col-offset-md-2 col-md-5 col-offset-lg-2 col-lg-5 col-offset-xl-2 col-xl-5"><div class="stat"><h2>Net deposit</h2><p>564</p></div></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-offset-sm-1 col-sm-10 col-md-5 col-lg-5 col-xl-5"><div class="stat"><h2>FTD</h2><p>445</p></div></div>
+                                        <div class="col-offset-sm-1 col-sm-10 col-offset-md-2 col-md-5 col-offset-lg-2 col-lg-5 col-offset-xl-2 col-xl-5"><div class="stat"><h2>Turn over</h2><p>432</p></div></div>
+                                    </div>
+                				</div>
+                                <div class="col-offset-sm-1 col-sm-10 col-offset-md-1 col-md-10 col-offset-lg-2 col-lg-8 col-offset-xl-2 col-xl-8">
+                                    <div class="row"><h2>Earnings chart</h2></div>
+                                    <div class="row">
+                                        <div>
+                                            <canvas id="myChart">
+                                                
+                                            </canvas>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
             			</div>
             		</div>
@@ -111,70 +124,72 @@
                             <h1>Links</h1>
                             <div class="line"></div>
                             <div class="content">
-                                <button class="button okbutton add_button">+ add new</button>
-                                <table>
-                                    <tr>
-                                        <td><h2>Home page</h2></td>
-                                        <td><a href="http://www.homepage.com" class="link list_link">http://www.homepage.com</a></td>
-                                        <td><i class="demo-icon icon-links"></i></td>
-                                        <td><i class="demo-icon icon-trash"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td><h2>Currently offer</h2></td>
-                                        <td><a href="http://www.currently.com" class="link list_link">http://www.currently.com</a></td>
-                                        <td><i class="demo-icon icon-links"></i></td>
-                                        <td><i class="demo-icon icon-trash"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td><h2>Blurpix</h2></td>
-                                        <td><a href="http://www.blurpix.com" class="link list_link">http://www.blurpix.com</a></td>
-                                        <td><i class="demo-icon icon-links"></i></td>
-                                        <td><i class="demo-icon icon-trash"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td><h2>Your Site</h2></td>
-                                        <td><a href="http://www.yoursite.com" class="link list_link">http://www.yoursite.com</a></td>
-                                        <td><i class="demo-icon icon-links"></i></td>
-                                        <td><i class="demo-icon icon-trash"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td><h2>Google</h2></td>
-                                        <td><a href="http://www.google.com" class="link list_link">http://www.google.com</a></td>
-                                        <td><i class="demo-icon icon-links"></i></td>
-                                        <td><i class="demo-icon icon-trash"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td><h2>Facebook</h2></td>
-                                        <td><a href="http://www.facebook.com" class="link list_link">http://www.facebook.com</a></td>
-                                        <td><i class="demo-icon icon-links"></i></td>
-                                        <td><i class="demo-icon icon-trash"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td><h2>Dashboard</h2></td>
-                                        <td><a href="http://www.dashboard.com" class="link list_link">http://www.dashboard.com</a></td>
-                                        <td><i class="demo-icon icon-links"></i></td>
-                                        <td><i class="demo-icon icon-trash"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td><h2>Blurax</h2></td>
-                                        <td><a href="http://www.blurax.com" class="link list_link">http://www.blurax.com</a></td>
-                                        <td><i class="demo-icon icon-links"></i></td>
-                                        <td><i class="demo-icon icon-trash"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td><h2>Piece of Wine</h2></td>
-                                        <td><a href="http://www.pieceofwine.com" class="link list_link">http://www.pieceofwine.com</a></td>
-                                        <td><i class="demo-icon icon-links"></i></td>
-                                        <td><i class="demo-icon icon-trash"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td><h2>Twitter</h2></td>
-                                        <td><a href="http://www.twitter.com" class="link list_link">http://www.twitter.com</a></td>
-                                        <td><i class="demo-icon icon-links"></i></td>
-                                        <td><i class="demo-icon icon-trash"></i></td>
-                                    </tr>
-                                </table>
-                                <button class="button okbutton add_button">+ add new</button>
+                                <div class="row"><button class="button okbutton add_button">+ add new</button></div>
+                                <div class="col-sm-12 col-offset-md-1 col-md-10 col-offset-lg-2 col-lg-8 col-offset-xl-2 col-xl-8">
+                                    <table>
+                                        <tr>
+                                            <td><h2>Home page</h2></td>
+                                            <td><a href="http://www.homepage.com" class="link list_link">http://www.homepage.com</a></td>
+                                            <td><i class="demo-icon icon-links"></i></td>
+                                            <td><i class="demo-icon icon-trash"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><h2>Currently offer</h2></td>
+                                            <td><a href="http://www.currently.com" class="link list_link">http://www.currently.com</a></td>
+                                            <td><i class="demo-icon icon-links"></i></td>
+                                            <td><i class="demo-icon icon-trash"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><h2>Blurpix</h2></td>
+                                            <td><a href="http://www.blurpix.com" class="link list_link">http://www.blurpix.com</a></td>
+                                            <td><i class="demo-icon icon-links"></i></td>
+                                            <td><i class="demo-icon icon-trash"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><h2>Your Site</h2></td>
+                                            <td><a href="http://www.yoursite.com" class="link list_link">http://www.yoursite.com</a></td>
+                                            <td><i class="demo-icon icon-links"></i></td>
+                                            <td><i class="demo-icon icon-trash"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><h2>Google</h2></td>
+                                            <td><a href="http://www.google.com" class="link list_link">http://www.google.com</a></td>
+                                            <td><i class="demo-icon icon-links"></i></td>
+                                            <td><i class="demo-icon icon-trash"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><h2>Facebook</h2></td>
+                                            <td><a href="http://www.facebook.com" class="link list_link">http://www.facebook.com</a></td>
+                                            <td><i class="demo-icon icon-links"></i></td>
+                                            <td><i class="demo-icon icon-trash"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><h2>Dashboard</h2></td>
+                                            <td><a href="http://www.dashboard.com" class="link list_link">http://www.dashboard.com</a></td>
+                                            <td><i class="demo-icon icon-links"></i></td>
+                                            <td><i class="demo-icon icon-trash"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><h2>Blurax</h2></td>
+                                            <td><a href="http://www.blurax.com" class="link list_link">http://www.blurax.com</a></td>
+                                            <td><i class="demo-icon icon-links"></i></td>
+                                            <td><i class="demo-icon icon-trash"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><h2>Piece of Wine</h2></td>
+                                            <td><a href="http://www.pieceofwine.com" class="link list_link">http://www.pieceofwine.com</a></td>
+                                            <td><i class="demo-icon icon-links"></i></td>
+                                            <td><i class="demo-icon icon-trash"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><h2>Twitter</h2></td>
+                                            <td><a href="http://www.twitter.com" class="link list_link">http://www.twitter.com</a></td>
+                                            <td><i class="demo-icon icon-links"></i></td>
+                                            <td><i class="demo-icon icon-trash"></i></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="row"><button class="button okbutton add_button">+ add new</button></div>
                             </div>
                         </div>
                     </div>
