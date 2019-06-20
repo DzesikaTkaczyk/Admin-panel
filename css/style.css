@@ -615,11 +615,13 @@ body {
 .button {
   border-radius: 3px;
   color: #ffffff;
-  text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   cursor: pointer;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .okbutton {
@@ -850,6 +852,25 @@ p {
 .big_table .scroll-wrapper table {
   width: 100%;
   max-width: 100%;
+}
+
+.personal_data {
+  margin: 34px 0 34px 0;
+}
+
+.personal_data label {
+  color: #bababa;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.personal_data .form_field {
+  margin: 8px 0;
+}
+
+.personal_data .line {
+  margin: 26px 0;
 }
 
 .general_stat {
