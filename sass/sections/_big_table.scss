@@ -2,6 +2,45 @@
 	margin-left: 16px;
 	margin-right: 16px;
 
+	.table_head {
+		border: none;
+		background-color: $white;
+		&:hover {
+			background-color: $white;
+			i {
+				visibility: hidden;
+			}
+		}
+
+		.icon-arrow-up-small {
+			font-size: 10px;
+			margin-left: 10px;
+			padding-bottom: 4px;
+			visibility: hidden;
+		}
+		
+		th {
+			color: $grey;
+			font-size: 13pt;
+			font-family: $font;
+			font-weight: 700;
+			white-space: nowrap;
+			&:hover {
+				color: $menu-background-color;
+				background-color: $side-background-color;
+				i {
+					visibility: visible;
+				}
+			}
+		}
+		.width_class {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: nowrap;
+			display: flex;
+			width: 100%;
+		}
+	}
 	th {
 		padding: 0 14px;
 	}
