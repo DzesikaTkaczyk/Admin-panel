@@ -7,7 +7,8 @@
 	.top_menu_content {
 		white-space: nowrap;
 		display: flex;
-		justify-content: flex-end;	
+		justify-content: flex-end;
+		box-sizing: border-box;
 	}
 
 	.top {
@@ -20,23 +21,15 @@
 		text-decoration: none;
 	}
 
-	.icon_profile {
-		display: flex;
-		align-items: center;
-	}
-
 	.list_horizontal {
-		display: block;
 		height: 60px;
 		padding: 0 10px;
 		border-left: 1px solid $light-grey;
-		&:hover {
-
-		}
+		box-sizing: border-box;
 	}
 
 	.amount {
-		font-size: 20px;
+		font-size: 21px;
 		font-family: $font;
 		font-weight: 400;
 		text-decoration: none;
@@ -46,21 +39,38 @@
 	.demo-icon {
 		color: $dark-grey;
 	}
-	
-	.icon-wallet {
+
+	.profile {
+		display: flex;
+		align-items: center;
 		font-size: 17px;
+	}
+
+	.wallet {
+		display: flex;
+		align-items: center;
+		white-space: nowrap;
+	}
+
+	.icon-wallet {
+		margin-right: 0;
+		font-size: 18px;
+		display: inline-block;
 	}
 
 	.icon-arrow-down {
 		font-size: 8px;
+		margin-left: 0;
+		display: inline-block;
 	}
 
 	.icon-notification {
-		font-size: 18px;
+		font-size: 20px;
 	}
 
 	.icon-profile {
-		font-size: 18px;
+		margin-right: 0;
+		font-size: 20px;
 	}
 	
 	.orange-point {
@@ -68,7 +78,7 @@
 		width: 8px;
 		position: absolute;
 		top: -4px;
-		right: 10px;
+		right: 14px;
 	}
 
 	.bell_point {
@@ -77,29 +87,34 @@
 
 	.dropdown {
 		background-color: $side-background-color;
-		border: 0 1px 1px 1px solid $light-grey;
-		display: block;
-		width: auto;
+		border-left: 1px solid $light-grey;
+		border-right: 1px solid $light-grey;
+		border-bottom: 1px solid $light-grey;
+		padding: 18px 0;
+		//box-sizing: border-box;
+		width: inherit;
+	}
+
+	.down_row{
+		display: flex;
 		justify-content: space-between;
-		//flex-direction: column;
-		position: absolute;
+		flex-wrap: nowrap;
+		width: 100%;
 	}
 
 	.underlist {
-		font-size: 12px;
+		font-size: 13px;
 		font-family: $font;
 		font-weight: 400;
 		display: inline-block;
 	}
 	.charge {
 		color: $dark-grey;
-		float: left;
-		margin-left: 20px;
+		margin: 8px 0 8px 20px;
 	}
 
 	.howmuch {
 		color: $menu-background-color;
-		float: right;
-		margin-right: 20px;
+		margin: 8px 20px 8px 0;
 	}
 }
