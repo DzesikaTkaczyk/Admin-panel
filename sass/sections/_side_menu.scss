@@ -164,7 +164,8 @@
 			}
 		}
 	}
-}	
+}
+
 @media(max-width: 767px) {
 	.side_menu {
 		background-color: $menu-background-color;
@@ -261,10 +262,6 @@
 		.demo-icon {
 			font-size: 15px
 		}
-
-		.hidden_mobile {
-			display: none;
-		}
 		
 		a {
 			margin-left: 10px;
@@ -283,6 +280,13 @@
 			a {
 				color: $white;
 			}
+		}
+
+		.mobile_menu {
+			display: none;
+		}
+		.show_mobile_menu {
+			display: block;
 		}
 	}	
 }

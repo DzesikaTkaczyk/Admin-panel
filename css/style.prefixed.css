@@ -1440,9 +1440,6 @@ p {
   .side_menu .demo-icon {
     font-size: 15px;
   }
-  .side_menu .hidden_mobile {
-    display: none;
-  }
   .side_menu a {
     margin-left: 10px;
     width: 100%;
@@ -1458,6 +1455,12 @@ p {
   }
   .side_menu .active a {
     color: #ffffff;
+  }
+  .side_menu .mobile_menu {
+    display: none;
+  }
+  .side_menu .show_mobile_menu {
+    display: block;
   }
 }
 
