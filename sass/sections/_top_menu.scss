@@ -90,7 +90,6 @@
 		border-left: 1px solid $light-grey;
 		border-right: 1px solid $light-grey;
 		border-bottom: 1px solid $light-grey;
-		//border-bottom: 1px solid $side-background-color;
 		padding-bottom: 18px;
 		width: inherit;
 	}
@@ -138,5 +137,10 @@
 		.dropdown {
 			display: block;
 		}
+	}
+}
+@media(max-width: 767px){
+	.top_menu {
+		order:3;
 	}
 }

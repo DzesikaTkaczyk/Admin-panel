@@ -11,3 +11,14 @@ input {
 	font-weight: 300;
 	font-size: 15px;
 }
+
+.input_error {
+	border-color: $error-color;
+}
+
+textarea {
+	color: $dark-grey;
+	border-style: none;
+	font-family: $font;
+	cursor: pointer;
+}

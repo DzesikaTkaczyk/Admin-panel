@@ -1,4 +1,5 @@
 'use strict';
+
 window.onload = function() {
 
 	var burger = document.getElementById('hamburger');
@@ -12,19 +13,16 @@ window.onload = function() {
 	  toggleMenu();
 
 	});
-}
-
-window.onload = function() {
 
 	var wallet = document.getElementById('wallet_list');
 
-	function toggleMenu(visible) { 
+	function walletMenu(visible) { 
 	  document.querySelector('.wallet_click').classList.toggle('show_wallet_click', visible);
 	}
 
 	wallet.addEventListener('click', function(e) {
 	  e.preventDefault();
-	  toggleMenu();
+	  walletMenu();
 
 	});
 }
