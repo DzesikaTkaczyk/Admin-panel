@@ -90,8 +90,8 @@
 		border-left: 1px solid $light-grey;
 		border-right: 1px solid $light-grey;
 		border-bottom: 1px solid $light-grey;
-		padding: 18px 0;
-		//box-sizing: border-box;
+		//border-bottom: 1px solid $side-background-color;
+		padding-bottom: 18px;
 		width: inherit;
 	}
 
@@ -116,5 +116,27 @@
 	.howmuch {
 		color: $menu-background-color;
 		margin: 8px 20px 8px 0;
+	}
+
+	.wallet_click {
+		.dropdown {
+			display: none;
+		}
+	}
+
+	.show_wallet_click {
+		background-color: $side-background-color;
+		.icon-wallet{
+			color: $menu-background-color;
+		}
+		.amount {
+			color: $menu-background-color;
+		}
+		.icon-arrow-down {
+			transform: rotate(180deg);
+		}
+		.dropdown {
+			display: block;
+		}
 	}
 }

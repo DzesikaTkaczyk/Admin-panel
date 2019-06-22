@@ -13,3 +13,18 @@ window.onload = function() {
 
 	});
 }
+
+window.onload = function() {
+
+	var wallet = document.getElementById('wallet_list');
+
+	function toggleMenu(visible) { 
+	  document.querySelector('.wallet_click').classList.toggle('show_wallet_click', visible);
+	}
+
+	wallet.addEventListener('click', function(e) {
+	  e.preventDefault();
+	  toggleMenu();
+
+	});
+}

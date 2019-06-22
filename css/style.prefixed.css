@@ -1483,7 +1483,7 @@ p {
   border-left: 1px solid #e3e3e3;
   border-right: 1px solid #e3e3e3;
   border-bottom: 1px solid #e3e3e3;
-  padding: 18px 0;
+  padding-bottom: 18px;
   width: inherit;
 }
 
@@ -1512,6 +1512,30 @@ p {
 .top_menu .howmuch {
   color: #333333;
   margin: 8px 20px 8px 0;
+}
+
+.top_menu .wallet_click .dropdown {
+  display: none;
+}
+
+.top_menu .show_wallet_click {
+  background-color: #f5f5f2;
+}
+
+.top_menu .show_wallet_click .icon-wallet {
+  color: #333333;
+}
+
+.top_menu .show_wallet_click .amount {
+  color: #333333;
+}
+
+.top_menu .show_wallet_click .icon-arrow-down {
+  transform: rotate(180deg);
+}
+
+.top_menu .show_wallet_click .dropdown {
+  display: block;
 }
 
 .big_table {
