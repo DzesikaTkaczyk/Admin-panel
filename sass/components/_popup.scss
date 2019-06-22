@@ -15,7 +15,7 @@
 	align-items: center;
 	overflow: auto;
 	padding: 30px;
-	//display: none;
+	display: none;
 }
 
 .overlay.show {
@@ -30,14 +30,14 @@
 	margin: auto;
 	position: relative;
 	padding: 30px;
-	//display: none;
+	display: none;
 }
 
 .modal .btn-close {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 5px 10px;
+  padding: 48px 42px;
 }
 
 .modal.show {
@@ -48,55 +48,111 @@
 	background-color: $white;
 }
 
-.login_popup {
-	max-width: 722px;
-	
-	div{
-		margin:0;
-	}
+@media(max-width: 991px) {
+	.login_popup {
+		
+		div {
+			margin:0;
+		}
 
-	.button {
-		padding: 12px 62px;
-		font-size: 20px;
-		display: inline-block;
-	}
+		.button {
+			width: 100%;
+			padding: 12px 62px;
+			font-size: 20px;
+			display:block;
+		}
 
-	input{
-		color: $grey;
-		font-family: $font;
-		font-size: 15px;
-		font-weight: 300;
-		line-height: 42px;
-	}
+		input {
+			color: $grey;
+			font-family: $font;
+			font-size: 15px;
+			font-weight: 300;
+			line-height: 42px;
+		}
 
-	.input_place {
-		margin-right: 18px;
-		display: inline-block;
-		line-height: 42px
-	}
+		.input_place {
+			display: block;
+			line-height: 42px;
+			width: 100%;
+			margin-bottom: 15px;
 
-	.demo-icon {
-		margin-left: 10px;
-		margin-right: 13px;
-		line-height: 42px;
-		display: inline-block;
-	}
+		}
 
-	.icon-login {
-		font-size: 15px;
-	}
+		.demo-icon {
+			margin-left: 10px;
+			margin-right: 13px;
+			line-height: 42px;
+			display: inline-block;
+		}
 
-	.icon-password {
-		font-size: 13px;
-	}
+		.icon-login {
+			font-size: 15px;
+		}
 
-	form {
-		margin: 46px;
+		.icon-password {
+			font-size: 13px;
+		}
+
+		form {
+			margin: 46px;
+		}
+	}
+}
+
+@media(min-width: 992px) {
+	.login_popup {
+		max-width: 722px;
+		
+		div {
+			margin:0;
+		}
+
+		.button {
+			padding: 12px 62px;
+			font-size: 20px;
+			display: inline-block;
+		}
+
+		input {
+			color: $grey;
+			font-family: $font;
+			font-size: 15px;
+			font-weight: 300;
+			line-height: 42px;
+		}
+
+		.input_place {
+			margin-right: 18px;
+			display: inline-block;
+			line-height: 42px;
+		}
+
+		.demo-icon {
+			margin-left: 10px;
+			margin-right: 13px;
+			line-height: 42px;
+			display: inline-block;
+		}
+
+		.icon-login {
+			font-size: 15px;
+		}
+
+		.icon-password {
+			font-size: 13px;
+		}
+
+		form {
+			margin: 46px;
+		}
 	}
 }
 
 .quit_popup {
-	
+	h1 {
+		text-transform: none;
+	}
+
 	.small_box {
 		width: 360px;
 	}
@@ -113,11 +169,18 @@
 	}
 }
 
-.chat_popup{
+.chat_popup {
+	width: 90vw;
 	max-width: 1074px; 
-	width: 100%;
-	display: flex;
-	
+	margin: auto;
+
+	.popup_box {
+		width: 100%;
+	}
+
+	h1 {
+		margin-right: 40px;
+	}
 	p {
 		font-size: 31px;
 		font-weight: 500;
@@ -162,11 +225,17 @@
 	.my_answer {
 		padding: 16px;
 		width: 100%;
+		white-space: nowrap;
+	}
+
+	.position_for_i {
+		position: relative;
+		width: calc(100% - 114px);
+		display: inline-block;
 	}
 
 	.send_button {
 		display: inline-block;
-		align-content: flex-end;
 		margin-left: 16px;
 	}
 
@@ -177,10 +246,7 @@
 		font-size: 15px;
 		font-weight: 300;
 		font-family: $font;
-	}
-
-	.position_for_i {
-		position: relative;
+		width: 100%;
 	}
 
 	.icon-message {

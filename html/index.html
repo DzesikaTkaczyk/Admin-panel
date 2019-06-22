@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="../css/style.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
         <script src="../js/script.js"></script>
+        <script src="../js/popup.js"></script>
     </head>
     <body>
         <div class="general">
@@ -35,7 +36,7 @@
                             <div class="row"><div class="line"></div></div>
                             <div class="row"><h3 class="hidden">your manager</h3></div>
                             <div class="row">
-                                <div class="manager">
+                                <div class="manager" id="chat-on">
                                     <div class="avatar">
                                         <img class="av" src="../images/av.png" alt="avatar">
                                         <div class="point active-point"></div>
@@ -73,14 +74,14 @@
                                     </a>
                                 </li>
                                 
-                                <li class="list_horizontal">
+                                <li class="list_horizontal" id="login-on">
                                     <a href="#" class="profile">
                                         <i class="demo-icon icon-profile top"></i>
                                         <p class="link list_link top">Leonardo Dicaprio</p>
                                     </a>
                                 </li>
                                 
-                                <li class="list_horizontal"><a href="#"><i class="demo-icon icon-quit top"></i></a></li>
+                                <li class="list_horizontal" id="quit-on"><a href="#"><i class="demo-icon icon-quit top"></i></a></li>
                     		</ul>
                         </div>
                     </div>
@@ -187,6 +188,66 @@
                                     </div>
                                 </div>
                                 <div class="center_button"><div class="row"><button class="button okbutton add_button">+ add new</button></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="modal" id="loginModal">
+                <div class="login_popup">
+                    <div class="small_box">
+                        <h1>Login</h1>
+                        <div class="row"><div class="line"></div></div>
+                        <div class="row">
+                            <form action="" method="POST">
+                                <div class="small_box input_place"><i class="demo-icon icon-login"></i><input type="text" name="login" placeholder="login name"></div>
+                                <div class="small_box input_place"><i class="demo-icon icon-password"></i><input type="password" name="password" placeholder="password"></div>
+                                <button class="button okbutton js--close-modal">Enter</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="quitModal">
+                <div class="quit_popup">
+                    <div class="small_box">
+                        <h1>Do you really want to Quit?</h1>
+                        <div class="row"><div class="line"></div></div>
+                        <div class="row">
+                            <div class="buttons">
+                                <button class="button nobutton quit_button js--close-modal">Cancel</button>
+                                <button class="button okbutton cancel_button">Quit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="chatModal">
+                <div class="chat_popup">
+                    <div class="small_box popup_box">
+                        <div class="row">
+                            <h1>Online chat with your personal manager</h1>
+                            <div class="btn-close js--close-modal"><i class="demo-icon icon-close"></i></div>
+                        </div>
+                        <div class="row"><div class="line"></div></div>
+                        <div class="row">
+                            <div class="av_section">
+                                <img class="av" src="../images/av.png" alt="avatar">
+                                <div class="av_name">
+                                    <p>Michael E.</p>
+                                    <div class="status_chat">online</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row"><div class="line"></div></div>
+                        <div class="conversation"></div>
+                        <div class="row"><div class="line"></div></div>
+                        <div class="my_answer">
+                            <div class="row">
+                                <div class="small_box position_for_i"><i class="demo-icon icon-message"></i><textarea name="message" placeholder="Enter the message"></textarea></div>
+                                <button class="button okbutton send_button">Send</button>
                             </div>
                         </div>
                     </div>
