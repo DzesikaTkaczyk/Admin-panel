@@ -847,6 +847,11 @@ body {
   font-size: 18px;
 }
 
+.save_button {
+  padding: 12px 30px;
+  font-size: 18px;
+}
+
 .add_button {
   padding: 12px 20px;
   margin: 24px 0;
@@ -861,6 +866,13 @@ body {
 .cancel_button {
   padding: 13px 20px 10px 20px;
   font-size: 19px;
+}
+
+.center_button {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .calendar {
@@ -1751,8 +1763,16 @@ p {
   max-width: 100%;
 }
 
-.personal_data {
-  margin: 34px 0 34px 0;
+.personal_data .form_part {
+  margin: 42px 0;
+}
+
+.personal_data .form_input {
+  line-height: 40px;
+}
+
+.personal_data input {
+  margin: 0 10px;
 }
 
 .personal_data label {
@@ -1760,14 +1780,52 @@ p {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
+  line-height: 40px;
 }
 
 .personal_data .form_field {
-  margin: 8px 0;
+  margin: 16px 0;
 }
 
 .personal_data .line {
   margin: 26px 0;
+}
+
+.personal_data .save_button {
+  margin-bottom: 34px;
+  display: inline-block;
+}
+
+@media (max-width: 767px) {
+  .personal_data .form_input {
+    width: 100%;
+    display: block;
+  }
+  .personal_data input {
+    display: block;
+  }
+  .personal_data label {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+  .personal_data .form_input {
+    width: calc(100% - 150px);
+    display: inline-block;
+  }
+  .personal_data input {
+    display: inline-block;
+  }
+  .personal_data label {
+    display: inline-block;
+  }
+  .personal_data .form_field {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
 }
 
 .general_stat {
@@ -1817,7 +1875,7 @@ p {
 }
 
 .table table td:nth-child(1) {
-  width: 45%;
+  width: 50%;
 }
 
 .table table td:nth-child(2) {
@@ -1825,14 +1883,7 @@ p {
 }
 
 .table table td:nth-child(3) {
-  width: 15%;
-}
-
-.table .center_button {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 10%;
 }
 
 .table a {

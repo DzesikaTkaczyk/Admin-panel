@@ -1,18 +1,79 @@
 .personal_data {
-	margin: 34px 0 34px 0;
+	
+	.form_part {
+		margin: 42px 0;
+	}
+
+	.form_input {
+		line-height: 40px;
+	}
+
+	input{
+		margin: 0 10px;
+	}
 
 	label {
 		color: $grey;
 		font-family: $font;
 		font-weight: 700; 
 		font-size: 16px;
-
+		line-height: 40px;
 	}
+
 	.form_field {
-		margin: 8px 0;
+		margin: 16px 0;
 	}
 
 	.line {
 		margin: 26px 0;
+	}
+
+	.save_button {
+		margin-bottom: 34px;
+		display: inline-block;
+	}
+}
+
+@media(max-width: 767px) {
+
+	.personal_data {
+
+		.form_input {
+			width: 100%;
+			display: block;
+		}
+
+		input{
+			display: block;
+		}
+
+		label {
+			display: inline-block;
+		}
+	}
+}
+
+@media(min-width: 768px) {
+	.personal_data {
+
+		.form_input {
+			width: calc(100% - 150px);
+			display: inline-block;
+		}
+
+		input{
+			display: inline-block;
+		}
+
+		label {
+			display: inline-block;
+		}
+
+		.form_field {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: nowrap;
+			width: 100%;
+		}
 	}
 }

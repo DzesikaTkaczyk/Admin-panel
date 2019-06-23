@@ -1,109 +1,221 @@
 <!DOCTYPE html>
 <html lang="pl">
     <head>
-    	<meta charset="UTF-8">      
+        <meta charset="UTF-8">      
         <title>SoloProject</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../font/css/soloproject.css">
         <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="../js/popup.js"></script>
     </head>
     <body>
         <div class="general">
             <div class="wrap">
-            	<div class="side_menu">
+                <div class="side_menu">
                     <div class="side_menu_sticky">
                         <div class="row">
                             <div class="side_menu_top">
-                                <div class="logo hidden hidden_mobile"><img src="../images/logo.png" alt="logo"></div>
-                                <div class="burger"><img src="../images/burger.png" alt="burger"></div>
+                                <div class="logo hidden"><img src="../images/logo.png" alt="logo"></div>
+                                <div class="burger" id="hamburger"><img src="../images/burger.png" alt="burger"></div>
                             </div>
                         </div>
-                        <div class="row">
-                            <ul class="list hidden_mobile">
-                                <li class="active"><a href="index.html" class="link side_menu_link"><i class="demo-icon icon-general"></i><div class="subpage hidden">General</div></a></li>
-                                <li><a href="details.html" class="link side_menu_link"><i class="demo-icon icon-details"></i><div class="subpage hidden">Details</div></a></li>
-                                <li><a href="links.html" class="link side_menu_link"><i class="demo-icon icon-links"></i><div class="subpage hidden">Links</div></a></li>
-                                <li><a href="banners.html" class="link side_menu_link"><i class="demo-icon icon-banners"></i><div class="subpage hidden">Banners</div></a></li>
-                                <li><a href="#" class="link side_menu_link"><i class="demo-icon icon-personaldata"></i><div class="subpage hidden">Personal data</div></a></li>
-                                <li><a href="#" class="link side_menu_link"><i class="demo-icon icon-payout"></i><div class="subpage hidden">Payout</div></a></li>
-                                <li><a href="#" class="link side_menu_link"><i class="demo-icon icon-postback"></i><div class="subpage hidden">Postback</div></a></li>
-            	            </ul>
-                        </div>
-                        <div class="row"><div class="line hidden_mobile"></div></div>
-                        <div class="row"><h3 class="hidden hidden_mobile">your manager</h3></div>
-                        <div class="row">
-                            <div class="manager hidden_mobile">
-                                <div class="avatar">
-                                    <img class="av" src="../images/av.png" alt="avatar">
-                                    <div class="point active-point"></div>
+                        <div class="mobile_menu">
+                            <div class="row">
+                                <ul class="list">
+                                    <li><a href="index.html" class="link side_menu_link"><i class="demo-icon icon-general"></i><div class="subpage hidden">General</div></a></li>
+                                    <li><a href="details.html" class="link side_menu_link"><i class="demo-icon icon-details"></i><div class="subpage hidden">Details</div></a></li>
+                                    <li><a href="links.html" class="link side_menu_link"><i class="demo-icon icon-links"></i><div class="subpage hidden">Links</div></a></li>
+                                    <li><a href="banners.html" class="link side_menu_link"><i class="demo-icon icon-banners"></i><div class="subpage hidden">Banners</div></a></li>
+                                    <li class="active"><a href="personal_data.html" class="link side_menu_link"><i class="demo-icon icon-personaldata"></i><div class="subpage hidden">Personal data</div></a></li>
+                                    <li><a href="payout.html" class="link side_menu_link"><i class="demo-icon icon-payout"></i><div class="subpage hidden">Payout</div></a></li>
+                                    <li><a href="#" class="link side_menu_link"><i class="demo-icon icon-postback"></i><div class="subpage hidden">Postback</div></a></li>
+                                </ul>
+                            </div>
+                            <div class="row"><div class="line"></div></div>
+                            <div class="row"><h3 class="hidden">your manager</h3></div>
+                            <div class="row">
+                                <div class="manager" id="chat-on">
+                                    <div class="avatar">
+                                        <img class="av" src="../images/av.png" alt="avatar">
+                                        <div class="point active-point"></div>
+                                    </div>
+                                    <p class="manage_name hidden">Mikhael E.</p>
                                 </div>
-                                <p class="manage_name hidden">Mikhael E.</p>
                             </div>
                         </div>
                     </div>
-            	</div>
+                </div>
                 <div class="content_wrap">
+                    <div class="row">
+                        <div class="top_menu">
+                            <ul class="top_menu_content list">
+                                <li class="wallet_click" id="wallet_list">
+                                    <div class="list_horizontal">
+                                        <a href="#" class="wallet">
+                                            <i class="demo-icon icon-wallet top"></i>
+                                            <p class="top amount">$1,500.00</p>
+                                            <i class="demo-icon icon-arrow-down top"></i>
+                                        </a>
+                                    </div>
+                                    <ul class="list dropdown">
+                                        <li><div class="row"><div class="down_row"><p class="charge underlist">CPA</p><p class="howmuch underlist">$1000</p></div></div></li>
+                                        <li><div class="row"><div class="down_row"><p class="charge underlist">CPL</p><p class="howmuch underlist">$1100</p></div></div></li>
+                                        <li><div class="row"><div class="down_row"><p class="charge underlist">Turnover</p><p class="howmuch underlist">$1030</p></div></div></li>
+                                        <li><div class="row"><div class="down_row"><p class="charge underlist">Not deposit</p><p class="howmuch underlist">$1000</p></div></div></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="list_horizontal">
+                                    <a href="#" class="bell_point">
+                                        <i class="demo-icon icon-notification top"></i>
+                                        <div class="point orange-point"></div>
+                                    </a>
+                                </li>
+                                
+                                <li class="list_horizontal" id="login-on">
+                                    <a href="#" class="profile">
+                                        <i class="demo-icon icon-profile top"></i>
+                                        <p class="link list_link top">Leonardo Dicaprio</p>
+                                    </a>
+                                </li>
+                                
+                                <li class="list_horizontal" id="quit-on"><a href="#"><i class="demo-icon icon-quit top"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
             		<div class="box">
             			<h1>Personal data</h1>
                         <div class="line"></div>
                         <div class="personal_data">
             				<form action="" method="POST">
-                                <div>
-                                    <div class="form_field">
-                                        <label>Name</label>
-                                        <div class="small_box"><input type="text" name="name"></div>
-                                    </div>
-                                    <div class="form_field">
-                                        <label>Surname</label>
-                                        <div class="small_box"><input type="text" name="surname"></div>
-                                    </div>
-                                    <div class="form_field">
-                                        <label>E-mail</label>
-                                        <div class="small_box"><input type="email" name="email"></div>
-                                    </div>
-                                    <div class="form_field">
-                                        <label>Phone number</label>
-                                        <div class="small_box"><input type="tel" name="phone_number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required></div>
-                                    </div>
-                                </div>
-                                <div class="line"></div>
-                                <div>
-                                    <div class="form_field">
-                                        <label>Skype</label>
-                                        <div class="small_box"><input type="text" name="skype"></div>
-                                    </div>
-                                    <div class="form_field">
-                                        <label>ICQ</label>
-                                        <div class="small_box"><input type="text" name="icq"></div>
-                                    </div>
-                                    <div class="form_field">
-                                        <label>Msn</label>
-                                        <div class="small_box"><input type="text" name="msn"></div>
+                                <div class="col-offset-sm-1 col-sm-10 col-offset-md-2 col-md-8 col-offset-lg-3 col-lg-6 col-offset-xl-4 col-xl-4">
+                                    <div class="form_part">
+                                        <div class="form_field">
+                                            <label>Name</label>
+                                            <div class="small_box form_input"><input type="text" name="name"></div>
+                                        </div>
+                                        <div class="form_field">
+                                            <label>Surname</label>
+                                            <div class="small_box form_input"><input type="text" name="surname"></div>
+                                        </div>
+                                        <div class="form_field">
+                                            <label>E-mail</label>
+                                            <div class="small_box form_input"><input type="email" name="email"></div>
+                                        </div>
+                                        <div class="form_field">
+                                            <label>Phone number</label>
+                                            <div class="small_box form_input"><input type="tel" name="phone_number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="line"></div>
-                                <div>
-                                    <div class="form_field">
-                                        <label>Wallet</label>
-                                        <div class="small_box"><input type="text" name="wallet"></div>
+                                <div class="form_part">
+                                    <div class="col-offset-sm-1 col-sm-10 col-offset-md-2 col-md-8 col-offset-lg-3 col-lg-6 col-offset-xl-4 col-xl-4">
+                                        <div class="form_field">
+                                            <label>Skype</label>
+                                            <div class="small_box form_input"><input type="text" name="skype"></div>
+                                        </div>
+                                        <div class="form_field">
+                                            <label>ICQ</label>
+                                            <div class="small_box form_input"><input type="text" name="icq"></div>
+                                        </div>
+                                        <div class="form_field">
+                                            <label>Msn</label>
+                                            <div class="small_box form_input"><input type="text" name="msn"></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="line"></div>
-                                <div>
-                                    <div class="form_field">
-                                        <label>Password</label>
-                                        <div class="small_box"><input type="password" name="password"></div>
-                                    </div>
-                                    <div class="form_field">
-                                        <label>Repeat</label>
-                                        <div class="small_box"><input type="password" name="password2"></div>
+                                <div class="form_part">
+                                    <div class="col-offset-sm-1 col-sm-10 col-offset-md-2 col-md-8 col-offset-lg-3 col-lg-6 col-offset-xl-4 col-xl-4">
+                                        <div class="form_field">
+                                            <label>Wallet</label>
+                                            <div class="small_box form_input"><input type="text" name="wallet"></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="line"></div>
-                                <button type="submit" class="button send_button okbutton">Save</button>
+                                <div class="form_part">
+                                    <div class="col-offset-sm-1 col-sm-10 col-offset-md-2 col-md-8 col-offset-lg-3 col-lg-6 col-offset-xl-4 col-xl-4">
+                                        <div class="form_field">
+                                            <label>Password</label>
+                                            <div class="small_box form_input"><input type="password" name="password"></div>
+                                        </div>
+                                        <div class="form_field">
+                                            <label>Repeat</label>
+                                            <div class="small_box form_input"><input type="password" name="password2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                <div class="center_button"><div class="row"><button type="submit" class="button save_button okbutton">Save</button></div></div>
                             </form>
             			</div>
             		</div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="modal" id="loginModal">
+                <div class="login_popup">
+                    <div class="small_box">
+                        <h1>Login</h1>
+                        <div class="row"><div class="line"></div></div>
+                        <div class="row">
+                            <form action="" method="POST">
+                                <div class="small_box input_place"><i class="demo-icon icon-login"></i><input type="text" name="login" placeholder="login name"></div>
+                                <div class="small_box input_place"><i class="demo-icon icon-password"></i><input type="password" name="password" placeholder="password"></div>
+                                <button class="button okbutton js--close-modal">Enter</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="quitModal">
+                <div class="quit_popup">
+                    <div class="small_box">
+                        <h1>Do you really want to Quit?</h1>
+                        <div class="row"><div class="line"></div></div>
+                        <div class="row">
+                            <div class="buttons">
+                                <button class="button nobutton quit_button js--close-modal">Cancel</button>
+                                <button class="button okbutton cancel_button">Quit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="chatModal">
+                <div class="chat_popup">
+                    <div class="small_box popup_box">
+                        <div class="row">
+                            <h1>Online chat with your personal manager</h1>
+                            <div class="btn-close js--close-modal"><i class="demo-icon icon-close"></i></div>
+                        </div>
+                        <div class="row"><div class="line"></div></div>
+                        <div class="row">
+                            <div class="av_section">
+                                <img class="av" src="../images/av.png" alt="avatar">
+                                <div class="av_name">
+                                    <p>Michael E.</p>
+                                    <div class="status_chat">online</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row"><div class="line"></div></div>
+                        <div class="conversation"></div>
+                        <div class="row"><div class="line"></div></div>
+                        <div class="my_answer">
+                            <div class="row">
+                                <div class="small_box position_for_i"><i class="demo-icon icon-message"></i><textarea name="message">Enter the message</textarea></div>
+                                <button class="button okbutton send_button">Send</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

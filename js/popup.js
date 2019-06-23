@@ -1,6 +1,10 @@
 'use strict';
 
-window.onload = function() {
+window.addEventListener ? 
+window.addEventListener("load",popup_js,false) : 
+window.attachEvent && window.attachEvent("onload",popup_js);
+
+function popup_js () {
 	
 	function closeModal() {
 	  document.getElementById('overlay').classList.remove('show')
@@ -57,5 +61,37 @@ window.onload = function() {
 	  openModal('#quitModal');
 
 	});
+
+	var addurl = document.getElementById('add-url');
+
+	/*addurl.addEventListener('click', function(e) {
+	  e.preventDefault();
+	  openModal('#addUrlModal');
+
+	});
+
+	var addurl2 = document.getElementById('add-url2');
+
+	addurl2.addEventListener('click', function(e) {
+	  e.preventDefault();
+	  openModal('#addUrlModal');
+
+	});
+
+	var addbanners = document.getElementById('add-banners');
+
+	addbanners.addEventListener('click', function(e) {
+	  e.preventDefault();
+	  openModal('#addBannerslModal');
+
+	});
+
+	var addbanners2 = document.getElementById('add-banners2');
+
+	addbanners2.addEventListener('click', function(e) {
+	  e.preventDefault();
+	  openModal('#addBannerslModal');
+
+	});*/
 
 }

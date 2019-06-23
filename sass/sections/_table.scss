@@ -11,23 +11,16 @@
 		width: 100%;
 	}
 
-	table td:nth-child(1){
-  		width:45%;
+	table td:nth-child(1) {
+  		width:50%;
 	}
-	table td:nth-child(2){
+	table td:nth-child(2) {
 	 	width:40%;
 	}
-	table td:nth-child(3){
-	 	width:15%;
+	table td:nth-child(3) {
+	 	width:10%;
 	}
 
-	.center_button {
-		text-align: center;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	
 	a {
 		font-size: 17px;
 		font-weight: 300;

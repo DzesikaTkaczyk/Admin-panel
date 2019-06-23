@@ -11,7 +11,7 @@
     </head>
     <body>
 		<div class="overlay" id="overlay">
-			<div class="modal" id="myModal">
+			<!--<div class="modal" id="loginModal">
 				<div class="login_popup">
 					<div class="small_box">
 					    <h1>Login</h1>
@@ -25,6 +25,8 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="modal" id="quitModal">
 				<div class="quit_popup">
 					<div class="small_box">
 					    <h2>Do you really want to Quit?</h2>
@@ -37,6 +39,8 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="modal" id="chatModal">
 				<div class="chat_popup">
 					<div class="small_box popup_box">
 					    <div class="row">
@@ -58,8 +62,60 @@
 						<div class="row"><div class="line"></div></div>
 					    <div class="my_answer">
 					    	<div class="row">
-							    <div class="small_box position_for_i"><i class="demo-icon icon-message"></i><textarea name="message" placeholder="Enter the message"></textarea></div>
+							    <div class="small_box position_for_i"><i class="demo-icon icon-message"></i><textarea name="message">Enter the message</textarea></div>
 							    <button class="button okbutton send_button">Send</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>-->
+			<div class="modal" id="addUrlModal">
+				<div class="add_url_popup">
+					<div class="small_box popup_box">
+					    <div class="row">
+					    	<h1>Add URL</h1>
+					    	<div class="btn-close js--close-modal"><i class="demo-icon icon-close"></i></div>
+					    </div>
+					    <div class="row"><div class="line"></div></div>
+					    <div class="row">
+					    	<form action="" method="POST">
+					    		<div>
+									<h2>Scheme name</h2>xrft
+							    	<div class="small_box"><input type="text" name="user-name" placeholder="Name"></div>
+							    </div>
+						    	<div class="small_box">
+						    		<select name="compain">
+						    			<option value="compain1">Compain1</option>
+										<option value="compain2">Compain2</option>
+										<option value="compain3">Compain3</option>
+						    		</select>
+						    	</div>
+						    	<div>
+							    	<h2>Language</h2>
+							    	<div class="small_box">
+							    		<select name="language">
+							    			<option value="en">EN</option>
+											<option value="language2">language2</option>
+											<option value="language3">language3</option>
+							    		</select>
+							    	</div>
+							    </div>
+						    </form>
+					    </div>
+					    <div class="row"><div class="line"></div></div>
+					    <div class="row"><h2>Select websites</h2></div>
+						<form class="select_input">
+							<div>
+								<div><input type="checkbox" name="landing_page_money"><p>Landing page Money</p></div>
+								<div><i class="demo-icon icon-links"></i></div>
+							</div>
+						</form>
+						<div class="row"><div class="line"></div></div>
+					    <div class="general link">
+					    	<div class="row">
+							    <div class="small_box position_for_i"><textarea name="message" placeholder="Generated link"></textarea></div>
+							    <button class="button disabled "><i class="demo-icon icon-links"></i> Copy link</button>
+							    <button class="button okbutton ">Save</button>
 							</div>
 						</div>
 					</div>

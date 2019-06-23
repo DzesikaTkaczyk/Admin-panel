@@ -39,6 +39,11 @@
 	font-size: 18px;
 }
 
+.save_button {
+	padding: 12px 30px;
+	font-size: 18px;
+}
+
 .add_button {
 	padding: 12px 20px;
 	margin: 24px 0;
@@ -53,4 +58,11 @@
 .cancel_button {
 	padding: 13px 20px 10px 20px;
 	font-size: 19px
+}
+
+.center_button {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
