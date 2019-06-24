@@ -1,10 +1,29 @@
 .big_table {
-	margin-left: 16px;
-	margin-right: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	font-size: 14pt;
+	font-family: $font;
+	white-space: nowrap;
+
+	.account {
+		max-width: 40px;
+	}
+
+	.theading {
+		display: inline-block;
+		border-radius: 3px;
+		padding: 8px;
+		line-height: normal;
+		&:hover {
+			background-color: $side-background-color;
+		}
+	}
 
 	.table_head {
 		border: none;
 		background-color: $white;
+		text-align: left;
+		font-size: 14pt;
 		&:hover {
 			background-color: $white;
 			i {
@@ -13,42 +32,30 @@
 		}
 
 		.icon-arrow-up-small {
-			font-size: 10px;
+			font-size: 8px;
 			margin-left: 10px;
 			padding-bottom: 4px;
 			visibility: hidden;
+			position: relative;
+			top: -4px;
 		}
 		
 		th {
 			color: $grey;
-			font-size: 13pt;
-			font-family: $font;
 			font-weight: 700;
-			white-space: nowrap;
+
 			&:hover {
 				color: $menu-background-color;
-				background-color: $side-background-color;
 				i {
 					visibility: visible;
 				}
 			}
 		}
-		.width_class {
-			display: flex;
-			justify-content: space-between;
-			flex-wrap: nowrap;
-			display: flex;
-			width: 100%;
-		}
 	}
-	th {
-		padding: 0 14px;
-	}
+	
 
 	td {
 		padding: 0 14px;
-		font-family: $font;
-		font-size: 17px;
 		font-weight: 300;
 	}
 	

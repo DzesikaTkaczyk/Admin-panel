@@ -910,6 +910,7 @@ input {
   font-family: "Roboto", sans-serif;
   cursor: pointer;
   height: 28px;
+  outline: none;
 }
 
 .input_date {
@@ -983,7 +984,7 @@ textarea {
 .pagination .page_nr {
   color: #56819f;
   font-weight: 300;
-  font-size: 21px;
+  font-size: 17px;
 }
 
 .pagination .page_nr:hover {
@@ -1259,9 +1260,21 @@ textarea {
   font-size: 14px;
 }
 
+.small_table table td:nth-child(1) {
+  width: 50%;
+}
+
+.small_table table td:nth-child(2) {
+  width: 40%;
+}
+
+.small_table table td:nth-child(3) {
+  width: 10%;
+}
+
 h1 {
   font-family: "Roboto", sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
   display: block;
@@ -1692,13 +1705,33 @@ p {
 }
 
 .big_table {
-  margin-left: 16px;
-  margin-right: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 14pt;
+  font-family: "Roboto", sans-serif;
+  white-space: nowrap;
+}
+
+.big_table .account {
+  max-width: 40px;
+}
+
+.big_table .theading {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 8px;
+  line-height: normal;
+}
+
+.big_table .theading:hover {
+  background-color: #f5f5f2;
 }
 
 .big_table .table_head {
   border: none;
   background-color: #ffffff;
+  text-align: left;
+  font-size: 14pt;
 }
 
 .big_table .table_head:hover {
@@ -1710,45 +1743,29 @@ p {
 }
 
 .big_table .table_head .icon-arrow-up-small {
-  font-size: 10px;
+  font-size: 8px;
   margin-left: 10px;
   padding-bottom: 4px;
   visibility: hidden;
+  position: relative;
+  top: -4px;
 }
 
 .big_table .table_head th {
   color: #bababa;
-  font-size: 13pt;
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
-  white-space: nowrap;
 }
 
 .big_table .table_head th:hover {
   color: #333333;
-  background-color: #f5f5f2;
 }
 
 .big_table .table_head th:hover i {
   visibility: visible;
 }
 
-.big_table .table_head .width_class {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  display: flex;
-  width: 100%;
-}
-
-.big_table th {
-  padding: 0 14px;
-}
-
 .big_table td {
   padding: 0 14px;
-  font-family: "Roboto", sans-serif;
-  font-size: 17px;
   font-weight: 300;
 }
 
@@ -1773,6 +1790,7 @@ p {
 
 .personal_data input {
   margin: 0 10px;
+  width: 95%;
 }
 
 .personal_data label {
@@ -1860,6 +1878,15 @@ p {
   margin: 20px 0 74px 0;
 }
 
+.general_stat canvas {
+  display: flex;
+  margin: 40px 0 55px 0;
+}
+
+.general_stat .my_chart {
+  width: 100%;
+}
+
 .table {
   width: 100%;
 }
@@ -1872,18 +1899,6 @@ p {
   border-collapse: collapse;
   border-bottom: 1px solid #e3e3e3;
   width: 100%;
-}
-
-.table table td:nth-child(1) {
-  width: 50%;
-}
-
-.table table td:nth-child(2) {
-  width: 40%;
-}
-
-.table table td:nth-child(3) {
-  width: 10%;
 }
 
 .table a {
