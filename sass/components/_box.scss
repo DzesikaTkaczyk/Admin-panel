@@ -3,6 +3,7 @@
 	background-color: $white;
 	box-shadow: 0 0 10px 5px $light-grey;
 	border-radius: 3px;
+	max-width: calc(100% - 36px);
 }
 
 .small_box {
@@ -11,7 +12,7 @@
 	border-radius: 3px;
 	border-style: solid;
 	border-color: $grey;
-	&:hover {
+	@include hover {
 		border-color: $light-grey;
 		transition-duration: 0.4s;
 	}

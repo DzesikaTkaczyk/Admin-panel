@@ -16,7 +16,7 @@
 		color: $links-color;
 		font-weight: 300;
 		font-size: 17px;
-		&:hover {
+		@include hover {
 			background-color: $side-background-color;
 			border-radius: 3px;
 		}
@@ -27,5 +27,35 @@
 		border-radius: 3px;
 		color: $grey;
 		font-weight: 700; 
+	}
+}
+
+@media(max-width: 767px) {
+	.hide_on_mobile {
+		display: none;
+	}
+
+	.show_on_mobile {
+		display: inline-block;
+	}
+}
+
+@media(min-width: 768px) {
+	.hide_on_mobile {
+		display: none;
+	}
+
+	.show_on_mobile {
+		display: inline-block;
+	}
+}
+
+@media(min-width: 992px) {
+	.hide_on_mobile {
+		display: inline-block;
+	}
+
+	.show_on_mobile {
+		display: none;
 	}
 }

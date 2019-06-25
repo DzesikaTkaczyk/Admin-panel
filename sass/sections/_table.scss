@@ -62,4 +62,16 @@
  	.table_margin_top {
 		margin-top: 24px;
 	}
+
+	.scroll-wrapper {
+	  display: block;
+	  width: 100%;
+	  overflow-x: auto;
+	  max-width: calc(100vw - 36px);
+	}
+
+	.scroll-wrapper table {
+	  width: 100%;
+	  max-width: 100%;
+	}
 }

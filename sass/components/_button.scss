@@ -9,7 +9,7 @@
 
 .okbutton {
 	background-color: $success-color;
-	&:hover {
+	@include hover {
 		background-color: $success-hover-color;
 		transition-duration: 0.4s;
 	}
@@ -17,7 +17,7 @@
 
 .nobutton {
 	background-color: $dark-grey;
-	&:hover {
+	@include hover {
 		background-color: $grey;
 		transition-duration: 0.4s;
 	}
@@ -65,18 +65,4 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-@media not all and (hover: none) {
-
-	.nobutton:hover {
-		background-color: $grey;
-		transition-duration: 0.4s;
-	}
-
-	.okbutton:hover {
-		background-color: $success-hover-color;
-		transition-duration: 0.4s;
-	}
-
 }

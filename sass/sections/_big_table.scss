@@ -14,7 +14,7 @@
 		border-radius: 3px;
 		padding: 8px;
 		line-height: normal;
-		&:hover {
+		@include hover {
 			background-color: $side-background-color;
 		}
 	}
@@ -24,7 +24,7 @@
 		background-color: $white;
 		text-align: left;
 		font-size: 14pt;
-		&:hover {
+		@include hover {
 			background-color: $white;
 			i {
 				visibility: hidden;
@@ -43,7 +43,7 @@
 		th {
 			color: $grey;
 			font-weight: 700;
-			&:hover {
+			@include hover {
 				color: $menu-background-color;
 				i {
 					visibility: visible;
@@ -52,20 +52,8 @@
 		}
 	}
 	
-
 	td {
 		padding: 0 14px;
 		font-weight: 300;
-	}
-	
-	.scroll-wrapper {
-	  display: block;
-	  width: 100%;
-	  overflow-x: auto;
-	}
-
-	.scroll-wrapper table {
-	  width: 100%;
-	  max-width: 100%;
 	}
 }

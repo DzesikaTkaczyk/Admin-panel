@@ -24,6 +24,10 @@
 		box-sizing: border-box;
 	}
 
+	.wallet_click {
+		position: relative;
+	}
+
 	.amount {
 		font-size: 21px;
 		font-family: $font;
@@ -87,7 +91,8 @@
 		border-right: 1px solid $light-grey;
 		border-bottom: 1px solid $light-grey;
 		padding-bottom: 18px;
-		width: inherit;
+		width: 100%;
+		position: absolute;
 		z-index: 3;
 	}
 
@@ -130,6 +135,7 @@
 
 		.list_horizontal {
 			//border-right: 1px solid $light-grey;
+			width: 50%;
 		}
 
 		/*.mobile_line1 {
@@ -151,7 +157,6 @@
 		}
 
 		.wallet_click {
-
 			.dropdown {
 				display: none;
 			}
@@ -170,6 +175,7 @@
 
 			.dropdown {
 				display: block;
+				bottom: 60px;
 			}
 		}
 
