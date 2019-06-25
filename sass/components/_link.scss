@@ -17,4 +17,8 @@
 
 .list_link {
 	color: $links-color;
+	white-space: nowrap;
+	&:hover { 
+		color: $success-hover-color;
+	}
 }

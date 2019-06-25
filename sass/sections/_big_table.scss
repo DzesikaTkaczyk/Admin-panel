@@ -1,7 +1,7 @@
 .big_table {
 	padding-left: 16px;
 	padding-right: 16px;
-	font-size: 14pt;
+	font-size: 13pt;
 	font-family: $font;
 	white-space: nowrap;
 
@@ -43,7 +43,6 @@
 		th {
 			color: $grey;
 			font-weight: 700;
-
 			&:hover {
 				color: $menu-background-color;
 				i {

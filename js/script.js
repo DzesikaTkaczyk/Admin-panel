@@ -41,21 +41,21 @@ function script_js () {
 	            // 4
 	            label: "Signups",
 	            // 5
-	            backgroundColor: '#8DBEC8',
-	            borderColor: '#8DBEC8',
+	            backgroundColor: '#80bfca',
+	            borderColor: '#80bfca',
 	            // 6
 	            data: [ 350, 210, 241, 304, 426, 396, 272, 279, 321 ],
 	        },
 	        {
 	            label: "FTD",
-	            backgroundColor: '#F29E4E',
-	            borderColor: '#F29E4E',
+	            backgroundColor: '#f58220',
+	            borderColor: '#f58220',
 	            data: [ 416, 172, 311, 260, 437, 111, 250, 544, 363 ],
 	        },
 	        {
 	            label: "Earned",
-	            backgroundColor: '#71B374',
-	            borderColor: '#71B374',
+	            backgroundColor: '#74b67a',
+	            borderColor: '#74b67a',
 	            data: [ 359, 149, 268, 390, 267, 341, 13, 238, 348, 348 ],
 	            // 7
 	            hidden: true,

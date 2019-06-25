@@ -1,0 +1,22 @@
+@media(max-width: 767px) {
+	position: relative;
+	
+	.top_menu {
+		margin-top: 75px;
+	}
+
+	.my_subpage {
+		margin-top: 75px;
+		margin-bottom: 75px;
+	}
+
+}
+
+
+@media(min-width: 768px) {
+	.top_menu { 
+	}
+	.my_subpage{
+	}
+	
+}
