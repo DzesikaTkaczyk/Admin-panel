@@ -1,9 +1,110 @@
+.side_menu {
+	background-color: $menu-background-color;
+	width: 54px;
+	top: 0;
+
+	.side_menu_top {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+		width: 100%;
+	}
+
+	.logo {
+		margin-left: 17px;
+		line-height: 55px; 
+		margin-top: 5px;
+		display: inline-block;
+	}
+
+	.burger {
+		margin-right: 16px;
+		margin-left: 17px;
+		line-height: 60px; 
+		color: $dark-grey;
+		display: inline-block;
+	}
+
+	h3 {
+		color: $dark-grey;
+		margin: 0 0 0 20px;
+		line-height: 60px;
+	}
+
+	.av {
+		display: inline-block;
+	}
+
+	.avatar {
+		position: relative;
+		display: inline-block;
+	}
+
+	.active-point {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.manage_name {
+		color: $links-color;
+		font-family: $font;
+		font-weight: 300;
+		font-size: 15px;
+		margin: 0 0 0 12px;
+		text-transform: none;
+		line-height: 43px;
+		display: inline-block;
+	}
+
+	.manager {
+		display: flex;
+	    align-items: center;
+	    white-space: nowrap;
+	}
+
+	.list {
+		margin-bottom: 25px;
+		position: relative;
+	}
+
+	.subpage {
+		position: absolute;
+		white-space: nowrap;
+	}
+
+	.demo-icon {
+		font-size: 15px
+	}
+
+	.icon-links {
+		font-size: 10px;
+	}
+
+	a {
+		margin-left: 10px;
+	}
+
+	li {
+		display: block;
+		border-left: 4px solid $menu-background-color;
+		background-color: $menu-background-color;
+	}
+
+	.active {
+		border-left: 4px solid $success-color;
+		background-color: $dark-grey;
+		a {
+			color: $white;
+		}
+	}
+}
+
+
 @media(min-width: 768px) {
 	.side_menu {
-		background-color: $menu-background-color;
+		left: 0;
 		width: 54px;
-		top: 0;
-		left: 0; 
 		&:hover {
 			width: 188px;
 			.hidden {
@@ -42,106 +143,32 @@
 			top: 0;
 		}
 
-		.side_menu_top {
-			display: flex;
-			justify-content: space-between;
-			flex-wrap: nowrap;
-			width: 100%;
-		}
-
-		.logo {
-			margin-left: 17px;
-			line-height: 55px; 
-			margin-top: 5px;
-			display: inline-block;
-
-		}
-
-		.burger {
-			margin-right: 16px;
-			margin-left: 17px;
-			line-height: 60px; 
-			color: $dark-grey;
-			display: inline-block;
-		}
-
-		h3 {
-			color: $dark-grey;
-			margin: 0 0 0 20px;
-			line-height: 60px;
-		}
-
 		.av {
 			height: 30px;
 			width: 30px;
 			margin-left: 12px;
-			display: inline-block;
 		}
 
 		.avatar {
 			width: 43px;
 			height: 33px;
-			position: relative;
 			margin-top: 23px;
-			display: inline-block;
 		}
 
 		.active-point {
 			width: 8px;
 			height: 8px;
-			position: absolute;
-			top: 0;
-			right: 0;
-		}
-
-		.manage_name {
-			color: $links-color;
-			font-family: $font;
-			font-weight: 300;
-			font-size: 15px;
-			margin: 0 0 0 12px;
-			text-transform: none;
-			line-height: 43px;
-			display: inline-block;
-		}
-
-		.manager {
-			display: flex;
-		    align-items: center;
-		    white-space: nowrap;
-		}
-
-		.list {
-			margin-bottom: 25px;
-			position: relative;
 		}
 
 		.subpage {
-			position: absolute;
 			left: 47px;
-			white-space: nowrap;
-		}
-
-		.demo-icon {
-			font-size: 15px
-		}
-
-		.icon-links {
-			font-size: 10px;
 		}
 
 		.hidden {
 			display: none;
 		}
-		
-		a {
-			margin-left: 10px;
-		}
 
 		li {
-			display: block;
-			border-left: 4px solid $menu-background-color;
-			background-color: $menu-background-color;
 			width: 54px;
 			&:hover {
 				width: 188px;
@@ -155,131 +182,48 @@
 				}		
 			}
 		}
-
-		.active {
-			border-left: 4px solid $success-color;
-			background-color: $dark-grey;
-			a {
-				color: $white;
-			}
-		}
 	}
 }
 
 @media(max-width: 767px) {
 	.side_menu {
-		background-color: $menu-background-color;
 		width: 100%;
 		position: fixed;
-		top: 0;
 
 		.side_menu_top {
-			display: flex;
-			justify-content: space-between;
-			flex-wrap: nowrap;
-			width: 100%;
 			height: 60px;
-		}
-
-		.logo {
-			margin-left: 17px;
-			line-height: 55px; 
-			margin-top: 5px;
-			display: inline-block;
-
-		}
-
-		.burger {
-			margin-right: 20px;
-			margin-left: 17px;
-			line-height: 60px; 
-			color: $dark-grey;
-			display: inline-block;
-		}
-
-		h3 {
-			color: $dark-grey;
-			margin: 0 0 0 20px;
-			line-height: 60px;
 		}
 
 		.av {
 			height: 43px;
 			width: 43px;
 			margin-left: 20px;
-			display: inline-block;
 		}
 
 		.avatar {
 			width: 63px;
 			height: 43px;
-			position: relative;
-			display: inline-block;
 		}
 
 		.active-point {
 			width: 12px;
 			height: 12px;
-			position: absolute;
-			top: 0;
-			right: 0;
-		}
-
-		.manage_name {
-			color: $links-color;
-			font-family: $font;
-			font-weight: 300;
-			font-size: 15px;
-			margin: 0 0 0 12px;
-			text-transform: none;
-			line-height: 43px;
-			display: inline-block;
 		}
 
 		.manager {
-			display: flex;
-		    align-items: center;
-		    white-space: nowrap;
 		    margin-bottom: 22px;
 		}
 
 		.list {
-			margin-bottom: 25px;
-			position: relative;
 			width: 100%;
 		}
 
 		.subpage {
-			position: absolute;
 			left: 50px;
-			white-space: nowrap;
-		}
-
-		.icon-links {
-			font-size: 10px;
-		}
-
-		.demo-icon {
-			font-size: 15px
 		}
 		
 		a {
-			margin-left: 10px;
 			width: 100%;
-		}
-
-		li {
-			display: block;
-			border-left: 4px solid $menu-background-color;
-			background-color: $menu-background-color;
-		}
-
-		.active {
-			border-left: 4px solid $success-color;
-			background-color: $dark-grey;
-			a {
-				color: $white;
-			}
 		}
 
 		.mobile_menu {

@@ -947,7 +947,6 @@ textarea {
 .link {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  overflow: hidden;
 }
 
 .side_menu_link {
@@ -964,6 +963,7 @@ textarea {
 .list_link {
   color: #56819f;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 @media not all and (hover: none) {
@@ -1348,12 +1348,113 @@ p {
 }
 
 /* Sections */
+.side_menu {
+  background-color: #333333;
+  width: 54px;
+  top: 0;
+}
+
+.side_menu .side_menu_top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.side_menu .logo {
+  margin-left: 17px;
+  line-height: 55px;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.side_menu .burger {
+  margin-right: 16px;
+  margin-left: 17px;
+  line-height: 60px;
+  color: #979797;
+  display: inline-block;
+}
+
+.side_menu h3 {
+  color: #979797;
+  margin: 0 0 0 20px;
+  line-height: 60px;
+}
+
+.side_menu .av {
+  display: inline-block;
+}
+
+.side_menu .avatar {
+  position: relative;
+  display: inline-block;
+}
+
+.side_menu .active-point {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.side_menu .manage_name {
+  color: #56819f;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  margin: 0 0 0 12px;
+  text-transform: none;
+  line-height: 43px;
+  display: inline-block;
+}
+
+.side_menu .manager {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.side_menu .list {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.side_menu .subpage {
+  position: absolute;
+  white-space: nowrap;
+}
+
+.side_menu .demo-icon {
+  font-size: 15px;
+}
+
+.side_menu .icon-links {
+  font-size: 10px;
+}
+
+.side_menu a {
+  margin-left: 10px;
+}
+
+.side_menu li {
+  display: block;
+  border-left: 4px solid #333333;
+  background-color: #333333;
+}
+
+.side_menu .active {
+  border-left: 4px solid #f58220;
+  background-color: #979797;
+}
+
+.side_menu .active a {
+  color: #ffffff;
+}
+
 @media (min-width: 768px) {
   .side_menu {
-    background-color: #333333;
-    width: 54px;
-    top: 0;
     left: 0;
+    width: 54px;
   }
   .side_menu:hover {
     width: 188px;
@@ -1387,90 +1488,27 @@ p {
     position: sticky;
     top: 0;
   }
-  .side_menu .side_menu_top {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    width: 100%;
-  }
-  .side_menu .logo {
-    margin-left: 17px;
-    line-height: 55px;
-    margin-top: 5px;
-    display: inline-block;
-  }
-  .side_menu .burger {
-    margin-right: 16px;
-    margin-left: 17px;
-    line-height: 60px;
-    color: #979797;
-    display: inline-block;
-  }
-  .side_menu h3 {
-    color: #979797;
-    margin: 0 0 0 20px;
-    line-height: 60px;
-  }
   .side_menu .av {
     height: 30px;
     width: 30px;
     margin-left: 12px;
-    display: inline-block;
   }
   .side_menu .avatar {
     width: 43px;
     height: 33px;
-    position: relative;
     margin-top: 23px;
-    display: inline-block;
   }
   .side_menu .active-point {
     width: 8px;
     height: 8px;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  .side_menu .manage_name {
-    color: #56819f;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    margin: 0 0 0 12px;
-    text-transform: none;
-    line-height: 43px;
-    display: inline-block;
-  }
-  .side_menu .manager {
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-  }
-  .side_menu .list {
-    margin-bottom: 25px;
-    position: relative;
   }
   .side_menu .subpage {
-    position: absolute;
     left: 47px;
-    white-space: nowrap;
-  }
-  .side_menu .demo-icon {
-    font-size: 15px;
-  }
-  .side_menu .icon-links {
-    font-size: 10px;
   }
   .side_menu .hidden {
     display: none;
   }
-  .side_menu a {
-    margin-left: 10px;
-  }
   .side_menu li {
-    display: block;
-    border-left: 4px solid #333333;
-    background-color: #333333;
     width: 54px;
   }
   .side_menu li:hover {
@@ -1484,113 +1522,40 @@ p {
   .side_menu li:hover .hidden {
     display: block;
   }
-  .side_menu .active {
-    border-left: 4px solid #f58220;
-    background-color: #979797;
-  }
-  .side_menu .active a {
-    color: #ffffff;
-  }
 }
 
 @media (max-width: 767px) {
   .side_menu {
-    background-color: #333333;
     width: 100%;
     position: fixed;
-    top: 0;
   }
   .side_menu .side_menu_top {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    width: 100%;
     height: 60px;
-  }
-  .side_menu .logo {
-    margin-left: 17px;
-    line-height: 55px;
-    margin-top: 5px;
-    display: inline-block;
-  }
-  .side_menu .burger {
-    margin-right: 20px;
-    margin-left: 17px;
-    line-height: 60px;
-    color: #979797;
-    display: inline-block;
-  }
-  .side_menu h3 {
-    color: #979797;
-    margin: 0 0 0 20px;
-    line-height: 60px;
   }
   .side_menu .av {
     height: 43px;
     width: 43px;
     margin-left: 20px;
-    display: inline-block;
   }
   .side_menu .avatar {
     width: 63px;
     height: 43px;
-    position: relative;
-    display: inline-block;
   }
   .side_menu .active-point {
     width: 12px;
     height: 12px;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  .side_menu .manage_name {
-    color: #56819f;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    margin: 0 0 0 12px;
-    text-transform: none;
-    line-height: 43px;
-    display: inline-block;
   }
   .side_menu .manager {
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
     margin-bottom: 22px;
   }
   .side_menu .list {
-    margin-bottom: 25px;
-    position: relative;
     width: 100%;
   }
   .side_menu .subpage {
-    position: absolute;
     left: 50px;
-    white-space: nowrap;
-  }
-  .side_menu .icon-links {
-    font-size: 10px;
-  }
-  .side_menu .demo-icon {
-    font-size: 15px;
   }
   .side_menu a {
-    margin-left: 10px;
     width: 100%;
-  }
-  .side_menu li {
-    display: block;
-    border-left: 4px solid #333333;
-    background-color: #333333;
-  }
-  .side_menu .active {
-    border-left: 4px solid #f58220;
-    background-color: #979797;
-  }
-  .side_menu .active a {
-    color: #ffffff;
   }
   .side_menu .mobile_menu {
     display: none;
