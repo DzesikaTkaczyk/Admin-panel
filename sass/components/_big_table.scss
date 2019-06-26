@@ -1,12 +1,10 @@
 .big_table {
-	padding-left: 16px;
-	padding-right: 16px;
 	font-size: 13pt;
 	font-family: $font;
 	white-space: nowrap;
 
 	.account {
-		max-width: 40px;
+		max-width: 150px;
 	}
 
 	.theading {
@@ -55,5 +53,13 @@
 	td {
 		padding: 0 14px;
 		font-weight: 300;
+	}
+}
+
+@media(min-width: 768px) {
+	.big_table {
+		padding-left: 16px;
+		padding-right: 16px;
+		width: 100%;
 	}
 }
