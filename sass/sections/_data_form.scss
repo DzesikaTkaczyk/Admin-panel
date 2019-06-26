@@ -1,8 +1,4 @@
 .personal_data {
-	
-	.form_part {
-		margin: 42px 0;
-	}
 
 	.form_input {
 		line-height: 40px;
@@ -39,6 +35,10 @@
 
 	.personal_data {
 
+		.form_part {
+			margin: 26px 0;
+		}
+
 		.form_input {
 			width: 100%;
 			display: block;
@@ -56,6 +56,10 @@
 
 @media(min-width: 768px) {
 	.personal_data {
+
+		.form_part {
+			margin: 42px 0;
+		}
 
 		.form_input {
 			width: calc(100% - 150px);

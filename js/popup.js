@@ -76,22 +76,6 @@ function popup_js () {
 	  e.preventDefault();
 	  openModal('#addUrlModal');
 
-	});
-
-	var addbanners = document.getElementById('add-banners');
-
-	addbanners.addEventListener('click', function(e) {
-	  e.preventDefault();
-	  openModal('#addBannerslModal');
-
-	});
-
-	var addbanners2 = document.getElementById('add-banners2');
-
-	addbanners2.addEventListener('click', function(e) {
-	  e.preventDefault();
-	  openModal('#addBannerslModal');
-
 	});*/
 
 }

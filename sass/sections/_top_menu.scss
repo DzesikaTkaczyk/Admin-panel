@@ -3,7 +3,6 @@
 	width: 100%;
 
 	.top_menu_content {
-		display: flex;
 		box-sizing: border-box;
 	}
 
@@ -20,7 +19,6 @@
 	.list_horizontal {
 		height: 60px;
 		padding: 0 10px;
-		border-left: 1px solid $light-grey;
 		box-sizing: border-box;
 	}
 
@@ -89,8 +87,6 @@
 		background-color: $side-background-color;
 		border-left: 1px solid $light-grey;
 		border-right: 1px solid $light-grey;
-		border-bottom: 1px solid $light-grey;
-		padding-bottom: 18px;
 		width: 100%;
 		position: absolute;
 		z-index: 3;
@@ -118,45 +114,58 @@
 		color: $menu-background-color;
 		margin: 8px 20px 8px 0;
 	}
-
-
 }
+
 @media(max-width: 767px){
 	.top_menu {
 		position: absolute;
 		bottom: 0;
 		border-top: 1px solid $light-grey;
-		height: 60px;
+		height: 123px;
+		max-width: 100%; 
+		display: flex;
+		margin: 0;
 
 		.top_menu_content {
-			white-space: normal ;
-			justify-content: center;
+			white-space: normal;
+			display: inline-block;
+			width: 100%;
 		}
 
 		.list_horizontal {
-			//border-right: 1px solid $light-grey;
-			width: 50%;
+			display: inline-block;
 		}
-
-		/*.mobile_line1 {
-			display: block;
-			width: 100%;
-		}
-
-		.mobile_line2 {
-			display: block;
-			width: 100%;
-		}*/
 
 		.icon-arrow-down {
 			transform: rotate(180deg);
 		}
 
 		.dropdown {
+			border-top: 1px solid $light-grey;
+			padding-top: 18px;
+		}
 
+		.icon-arrow-down {
+			margin-left: 10px;
+		}
+
+		.wallet {
+			width: 100%;
+		}
+
+		.bell_mobile {
+			display: inline-block;
+		}
+
+		#login-on {
+			border-right: 1px solid $light-grey; 
+			width: calc(100% - 80px);
 		}
 
 		.wallet_click {
+			width: calc(100% - 80px);
+			border-right: 1px solid $light-grey;
+			display: inline-block;
 			.dropdown {
 				display: none;
 			}
@@ -173,12 +182,15 @@
 				color: $menu-background-color;
 			}
 
+			.icon-arrow-down {
+				transform: rotate(180deg);
+			}
+
 			.dropdown {
 				display: block;
 				bottom: 60px;
 			}
 		}
-
 	}
 }
 
@@ -187,15 +199,35 @@
 		height: 60px;
 		border-bottom: 1px solid $light-grey;
 
+		.only_mobile {
+			display: none;
+		}
+
 		.top_menu_content {
-			white-space: nowrap;
+			display: flex;
+			box-sizing: border-box;
 			justify-content: flex-end;
+			white-space: nowrap;
+			width: 100%;
+		}
+
+		.list_horizontal {
+			border-left: 1px solid $light-grey;
+		}
+
+		.icon-arrow-down {
+			margin-left: 0;
 		}
 
 		.wallet_click {
 			.dropdown {
 				display: none;
 			}
+		}
+
+		.dropdown {
+			border-bottom: 1px solid $light-grey;
+			padding-bottom: 18px;
 		}
 
 		.show_wallet_click {
