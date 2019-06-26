@@ -48,112 +48,52 @@
 	background-color: $white;
 }
 
-@media(max-width: 991px) {
-	.login_popup {
-		
-		div {
-			margin:0;
-		}
-
-		.button {
-			width: 100%;
-			padding: 12px 62px;
-			font-size: 20px;
-			display:block;
-		}
-
-		input {
-			color: $grey;
-			font-family: $font;
-			font-size: 15px;
-			font-weight: 300;
-			line-height: 42px;
-		}
-
-		.input_place {
-			display: block;
-			line-height: 42px;
-			width: 100%;
-			margin-bottom: 15px;
-		}
-
-		.demo-icon {
-			margin-left: 10px;
-			margin-right: 13px;
-			line-height: 42px;
-			display: inline-block;
-		}
-
-		.icon-login {
-			font-size: 15px;
-		}
-
-		.icon-password {
-			font-size: 13px;
-		}
-
-		form {
-			margin: 46px;
-		}
+.login_popup {
+	
+	div {
+		margin:0;
 	}
-}
 
-@media(min-width: 992px) {
-	.login_popup {
-		max-width: 722px;
-		
-		div {
-			margin:0;
-		}
+	.button {
+		padding: 12px 62px;
+		font-size: 20px;
+	}
 
-		.button {
-			padding: 12px 62px;
-			font-size: 20px;
-			display: inline-block;
-		}
+	input {
+		color: $grey;
+		font-family: $font;
+		font-size: 15px;
+		font-weight: 300;
+		line-height: 42px;
+	}
 
-		input {
-			color: $grey;
-			font-family: $font;
-			font-size: 15px;
-			font-weight: 300;
-			line-height: 42px;
-		}
+	.input_place {
+		line-height: 42px;
+	}
 
-		.input_place {
-			margin-right: 18px;
-			display: inline-block;
-			line-height: 42px;
-		}
+	.demo-icon {
+		margin-left: 10px;
+		margin-right: 13px;
+		line-height: 42px;
+		display: inline-block;
+	}
 
-		.demo-icon {
-			margin-left: 10px;
-			margin-right: 13px;
-			line-height: 42px;
-			display: inline-block;
-		}
+	.icon-login {
+		font-size: 15px;
+	}
 
-		.icon-login {
-			font-size: 15px;
-		}
+	.icon-password {
+		font-size: 13px;
+	}
 
-		.icon-password {
-			font-size: 13px;
-		}
-
-		form {
-			margin: 46px;
-		}
+	form {
+		margin: 46px;
 	}
 }
 
 .quit_popup {
 	h1 {
 		text-transform: none;
-	}
-
-	.small_box {
-		width: 360px;
 	}
 
 	.nobutton{
@@ -218,7 +158,6 @@
 	}
 
 	.conversation {
-		height: 318px;
 		padding: 16px;
 	}
 
@@ -257,3 +196,62 @@
 		font-size: 14px;
 	}
 }
+
+@media(max-width: 991px) {
+	.login_popup {
+
+		.button {
+			width: 100%;
+			display:block;
+		}
+
+		.input_place {
+			display: block;
+			width: 100%;
+			margin-bottom: 15px;
+			white-space: nowrap;
+		}
+	}
+
+	.quit_popup {
+		.small_box {
+			width: 280px;
+		}
+	}
+
+	.chat_popup {
+		.conversation {
+			height: 45vh;
+		}
+	}
+}
+
+@media(min-width: 992px) {
+	.login_popup {
+		max-width: 722px;
+
+		.button {
+			display: inline-block;
+		}
+
+		.input_place {
+			margin-right: 18px;
+			display: inline-block;
+		}
+	}
+
+	.quit_popup {
+		.small_box {
+			width: 360px;
+		}
+	}
+
+	.chat_popup {
+		.conversation {
+			height: 40vh;
+			max-height: 318px;
+		}
+	}
+}
+
+

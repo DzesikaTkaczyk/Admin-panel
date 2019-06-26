@@ -943,6 +943,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 18px;
+  max-width: 100%;
 }
 
 .calendar .date {
@@ -964,6 +966,22 @@ body {
 
 .calendar [type="date"]::-webkit-calendar-picker-indicator {
   opacity: 0;
+}
+
+.calendar .small_box {
+  max-width: calc(100% - 60px);
+}
+
+@media (max-width: 767px) {
+  .input_date {
+    width: 40%;
+  }
+}
+
+@media (min-width: 768px) {
+  .input_date {
+    width: 46%;
+  }
 }
 
 input {
@@ -1044,7 +1062,6 @@ textarea {
 .pagination a {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  padding: 14px 20px;
 }
 
 .pagination .demo-icon {
@@ -1175,93 +1192,48 @@ textarea {
   background-color: #ffffff;
 }
 
-@media (max-width: 991px) {
-  .login_popup div {
-    margin: 0;
-  }
-  .login_popup .button {
-    width: 100%;
-    padding: 12px 62px;
-    font-size: 20px;
-    display: block;
-  }
-  .login_popup input {
-    color: #bababa;
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 42px;
-  }
-  .login_popup .input_place {
-    display: block;
-    line-height: 42px;
-    width: 100%;
-    margin-bottom: 15px;
-  }
-  .login_popup .demo-icon {
-    margin-left: 10px;
-    margin-right: 13px;
-    line-height: 42px;
-    display: inline-block;
-  }
-  .login_popup .icon-login {
-    font-size: 15px;
-  }
-  .login_popup .icon-password {
-    font-size: 13px;
-  }
-  .login_popup form {
-    margin: 46px;
-  }
+.login_popup div {
+  margin: 0;
 }
 
-@media (min-width: 992px) {
-  .login_popup {
-    max-width: 722px;
-  }
-  .login_popup div {
-    margin: 0;
-  }
-  .login_popup .button {
-    padding: 12px 62px;
-    font-size: 20px;
-    display: inline-block;
-  }
-  .login_popup input {
-    color: #bababa;
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 42px;
-  }
-  .login_popup .input_place {
-    margin-right: 18px;
-    display: inline-block;
-    line-height: 42px;
-  }
-  .login_popup .demo-icon {
-    margin-left: 10px;
-    margin-right: 13px;
-    line-height: 42px;
-    display: inline-block;
-  }
-  .login_popup .icon-login {
-    font-size: 15px;
-  }
-  .login_popup .icon-password {
-    font-size: 13px;
-  }
-  .login_popup form {
-    margin: 46px;
-  }
+.login_popup .button {
+  padding: 12px 62px;
+  font-size: 20px;
+}
+
+.login_popup input {
+  color: #bababa;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 42px;
+}
+
+.login_popup .input_place {
+  line-height: 42px;
+}
+
+.login_popup .demo-icon {
+  margin-left: 10px;
+  margin-right: 13px;
+  line-height: 42px;
+  display: inline-block;
+}
+
+.login_popup .icon-login {
+  font-size: 15px;
+}
+
+.login_popup .icon-password {
+  font-size: 13px;
+}
+
+.login_popup form {
+  margin: 46px;
 }
 
 .quit_popup h1 {
   text-transform: none;
-}
-
-.quit_popup .small_box {
-  width: 360px;
 }
 
 .quit_popup .nobutton {
@@ -1326,7 +1298,6 @@ textarea {
 }
 
 .chat_popup .conversation {
-  height: 318px;
   padding: 16px;
 }
 
@@ -1363,6 +1334,45 @@ textarea {
   position: absolute;
   top: 12px;
   font-size: 14px;
+}
+
+@media (max-width: 991px) {
+  .login_popup .button {
+    width: 100%;
+    display: block;
+  }
+  .login_popup .input_place {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    white-space: nowrap;
+  }
+  .quit_popup .small_box {
+    width: 280px;
+  }
+  .chat_popup .conversation {
+    height: 45vh;
+  }
+}
+
+@media (min-width: 992px) {
+  .login_popup {
+    max-width: 722px;
+  }
+  .login_popup .button {
+    display: inline-block;
+  }
+  .login_popup .input_place {
+    margin-right: 18px;
+    display: inline-block;
+  }
+  .quit_popup .small_box {
+    width: 360px;
+  }
+  .chat_popup .conversation {
+    height: 40vh;
+    max-height: 318px;
+  }
 }
 
 .small_table table td:nth-child(1) {
