@@ -61,21 +61,4 @@ function popup_js () {
 	  openModal('#quitModal');
 
 	});
-
-	var addurl = document.getElementById('add-url');
-
-	/*addurl.addEventListener('click', function(e) {
-	  e.preventDefault();
-	  openModal('#addUrlModal');
-
-	});
-
-	var addurl2 = document.getElementById('add-url2');
-
-	addurl2.addEventListener('click', function(e) {
-	  e.preventDefault();
-	  openModal('#addUrlModal');
-
-	});*/
-
 }

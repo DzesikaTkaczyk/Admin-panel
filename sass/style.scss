@@ -15,7 +15,6 @@
 @import "components/list";
 @import "components/pagination";
 @import "components/point";
-@import "components/popup";
 @import "components/small_table";
 @import "components/typography";
 
@@ -24,10 +23,9 @@
 @import "sections/top_menu";
 @import "sections/data_form";
 @import "sections/general_stat";
-@import "sections/popup_chat";
+@import "sections/popup";
 @import "sections/table";
 
 /* Pages / Views */
 @import "pages/all_side";
-@import "pages/details_side";
 
