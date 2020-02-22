@@ -1,2 +1,2 @@
 # solo-project
-https://dzesikatkaczyk.github.io/solo-project/html/index.html
+https://dzesikatkaczyk.github.io/Admin-panel//html/index.html
